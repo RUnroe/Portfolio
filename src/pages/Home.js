@@ -3,7 +3,11 @@ import React from "react";
 function Home() {
 
     return(
-        <h1>Home</h1>
+        <div className="section gradient">
+            <h1>Ryan Unroe</h1>
+            <h2 className="uppercase">WEB DESIGN AND DEVELOPMENT STUDENT</h2>
+
+        </div>
     )
 
 }

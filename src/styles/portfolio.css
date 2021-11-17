@@ -21,7 +21,9 @@ html, body {
 
 
 .container {
-    max-width:1200px;
+    max-width:1300px;
+    margin:0 auto;
+    padding:0 1rem;
 }
 
 .section {
@@ -35,18 +37,77 @@ html, body {
     background-color: var(--gradient-dark);
 }
 
-
+#main {
+    margin-top:4rem;
+}
 
 /**************************
         Typography
 **************************/
 
+.uppercase {
+    text-transform: uppercase;
+}
 
+.center {
+    text-align: center;
+}
 
 
 /**************************
         Navigation
 **************************/
+
+nav {
+    width:100%;
+    height:4rem;
+    position:fixed;
+    top:0;
+    background-color: transparent;
+    border-bottom:1px solid var(--color-dark-3);
+
+}
+.nav-content {
+    max-width: 1300px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0 1rem;
+    height:100%;
+}
+.nav-logo {
+    position:absolute;
+
+
+}
+.nav-logo a {
+text-decoration: none;
+}
+.nav-items {
+    margin: 0 auto;
+}
+
+.nav-item {
+    margin: 0 1rem;
+    display: inline-block;
+    padding: 1.3rem 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--color-dark-2);
+}
+nav a {
+    box-sizing: border-box;
+}
+
+nav h1 {
+    margin:0;
+    padding:1.1rem 1rem;
+    font-weight: 400;
+    color: var(--color-dark-2);
+}
 
 
 /**************************
