@@ -19,7 +19,6 @@ function App() {
     <div id="main">
       <RoutesModule />
     </div>
-    <Footer/>
   </BrowserRouter>
   );
 }
@@ -45,15 +44,6 @@ function RoutesModule() {
   </Switch>
   )
 }
-
-function Footer() {
-  return (
-  <footer>
-    <p><a href="mailto:ryanunroe@gmail.com">ryanunroe@gmail.com</a></p>
-  </footer>
-  );
-}
-
 
 
 export default App;
