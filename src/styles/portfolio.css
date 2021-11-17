@@ -1,0 +1,54 @@
+/**************************
+        General
+**************************/
+
+:root {
+    --color-dark-1: #403d52;
+    --color-dark-2:#84809E;
+    --color-dark-3: #B7B6BE;
+    --gradient-dark: linear-gradient(45deg, #49455E, #676287);
+    --color-light-1: #FFF;
+    --color-light-2: #FAFAFA;
+    
+    --color-yellow: #F3DD16;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    max-width:1200px;
+}
+
+.section {
+    padding:1rem 0;
+}
+.section.light-2 {
+    background-color: var(--color-light-2);
+}
+
+.section.gradient {
+    background-color: var(--gradient-dark);
+}
+
+
+
+/**************************
+        Typography
+**************************/
+
+
+
+
+/**************************
+        Navigation
+**************************/
+
+
+/**************************
+        Buttons
+**************************/

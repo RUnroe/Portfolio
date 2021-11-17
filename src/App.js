@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/portfolio.css';
 import Home from './pages/Home';
 import ProjectList from './pages/ProjectList';
 import NavigationMenu from './partials/NavigationMenu';
