@@ -9,14 +9,20 @@ function Home() {
                 <h2 className="uppercase">Web Design and Development Student</h2>
                 <div className="socials-container">
                     <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
+                        <i className="fab fa-linkedin-in"></i>
                     </a>
                     <a className="social-icon github" href="https://github.com/RUnroe/" target="_blank">
-                        <i class="fab fa-github"></i>
+                        <i className="fab fa-github"></i>
                     </a>
                     <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank">
-                        <i class="fas fa-envelope"></i>
+                        <i className="fas fa-envelope"></i>
                     </a>
+                </div>
+
+                <div className="hexagon">
+                    <div className="hexagon-in1">
+                        <div className="hex-image"></div>
+                    </div>
                 </div>
             </div>
 
