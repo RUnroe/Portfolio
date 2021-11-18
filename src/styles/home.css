@@ -1,5 +1,10 @@
+html {
+    overflow-x: hidden;
+}
+body, 
 #main {
     background-color: var(--color-light-2);
+    
 }
 
 
@@ -79,9 +84,53 @@
     box-sizing: border-box;
 }
 
+/**************************
+        About Me
+**************************/
+
 .about-me p {
     margin-right:400px;
 }
+
+.about-me {
+    margin-bottom: 4rem;
+}
+
+/**************************
+        Skills
+**************************/
+
+.skills {
+    padding:5rem 0;
+    
+    position: relative;
+    box-sizing: border-box;
+}
+
+.skills .slanted-bg {
+    height:100%;
+    width:140%;
+    background-color: var(--color-light-1);
+    transform: translate(-50%, -50%) rotate(357deg);
+    z-index:50;
+    position:absolute;
+    left:50%;
+    top:50%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px #A29FB944;
+}
+
+.skills .container {
+    position: relative;
+    z-index: 75;
+    display:grid;
+    grid-template-columns: 4fr 3fr;    
+}
+
+
+/**************************
+        Responsive
+**************************/
 
 @media all and (max-width:900px) {
     .hex-image {
