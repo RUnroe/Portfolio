@@ -7,6 +7,10 @@ body,
     
 }
 
+#main {
+    overflow: hidden;
+}
+
 
 /**************************
             Hero
@@ -52,7 +56,7 @@ body,
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 }
 
 .social-icon.github {
@@ -144,6 +148,28 @@ body,
     margin:6px 0;
 }
 
+
+/**************************
+        Contact Me
+**************************/
+.contact-me {
+    text-align: center;
+    padding-top: 3rem;
+}
+.contact-me h3 {
+    margin-bottom: 0;
+}
+.contact-me .socials-container {
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.contact-me .social-icon {
+    margin-right:1.5rem;
+    width:48px;
+    height:48px;
+    font-size: 1.55rem;
+}
 
 /**************************
         Responsive

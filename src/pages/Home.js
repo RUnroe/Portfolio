@@ -40,7 +40,7 @@ function Home() {
 
             <div className="skills">
                 <div className="slanted-bg"></div>
-                <div className="container">
+                <div className="container ex">
                     <div className="left">
                         <h3>Skills</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -73,11 +73,29 @@ function Home() {
                             <i class="devicon-illustrator-plain"></i>
                             <i class="devicon-figma-plain"></i>
                         </div>
-                        
                     </div>
                 </div>
                 
             </div>
+
+            <div className="contact-me">
+                <div className="container">
+                    <h3>Want to get in touch?</h3>
+                    <p>
+                        Feel free to reach out to me via email or LinkedIn! 
+                    </p>
+                    <div className="socials-container">
+                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank">
+                        <i className="fas fa-envelope"></i>
+                    </a>
+                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank">
+                        <i className="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                </div>
+
+            </div>
+
         </div>
         </>
     )

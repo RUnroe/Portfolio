@@ -25,7 +25,9 @@ html, body {
     margin:0 auto;
     padding:0 2rem;
 }
-
+.container.ex {
+    padding: 0 3rem;
+}
 .section {
     padding:1rem;
 }
@@ -111,6 +113,8 @@ text-decoration: none;
     font-size: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
+    min-width: 8rem;
 
     color: var(--color-dark-2);
 }
