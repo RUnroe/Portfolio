@@ -7,7 +7,7 @@ function Home() {
         <div className="section gradient hero">
             <div className="container">
                 <h1>Ryan Unroe</h1>
-                <h2 className="uppercase">Web Design and Development Student</h2>
+                <h2 className="uppercase">Web Design and Development</h2>
                 <div className="socials-container">
                     <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank">
                         <i className="fab fa-linkedin-in"></i>
@@ -47,10 +47,36 @@ function Home() {
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
+                    <div className="right">
+                        <div className="icons-container">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-js-square"></i>
+
+                            <i class="fab fa-node-js"></i>
+                            <i class="fab fa-react"></i>
+                            <i class="fab fa-angular"></i>
+
+                            <i class="devicon-spring-plain"></i>
+                            <i class="fab fa-git-alt"></i>
+                            <i class="devicon-csharp-plain"></i>
+
+                            <i class="fab fa-java"></i>
+                            <i class="devicon-php-plain"></i>
+                            <i class="fab fa-python"></i>
+
+                            <i class="devicon-nginx-original"></i>
+                            <i class="devicon-raspberrypi-line"></i>
+                            <i class="fab fa-linux"></i>
+
+                            <i class="devicon-mongodb-plain"></i>
+                            <i class="devicon-illustrator-plain"></i>
+                            <i class="devicon-figma-plain"></i>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div className="right">
-                    
-                </div>
+                
             </div>
         </div>
         </>
