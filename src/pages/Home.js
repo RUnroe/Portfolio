@@ -6,8 +6,10 @@ function Home() {
         <>
         <div className="section gradient hero">
             <div className="container">
-                <h1>Ryan Unroe</h1>
-                <h2 className="uppercase">Web Design and Development</h2>
+                <div>
+                    <h1>Ryan Unroe</h1>
+                    <h2 className="uppercase">Web Design and Development</h2>
+                </div>
                 <div className="socials-container">
                     <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank">
                         <i className="fab fa-linkedin-in"></i>
