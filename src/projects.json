@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Quant Freelance",
+        "projectType": "A Freelance Webstore",
+        "description": "",
+        "images": [""],
+        "coverImage": "",
+        "githubLink": "",
+        "liveSiteLink": "",
+        "primaryLanguage": "React"
+    },
+
+    {
+        "title": "Bifrost",
+        "projectType": "A Discord Clone",
+        "description": "",
+        "images": [""],
+        "coverImage": "",
+        "githubLink": "",
+        "liveSiteLink": "",
+        "primaryLanguage": "JavaScript"
+    },
+
+    {
+        "title": "Video Game Library",
+        "projectType": "A video game renting and tracking website",
+        "description": "",
+        "images": [""],
+        "coverImage": "",
+        "githubLink": "",
+        "liveSiteLink": "",
+        "primaryLanguage": "MVC ASP.NET"
+    },
+
+    {
+        "title": "RasPi Getting Started",
+        "projectType": "A Raspberry Pi Setup and Tutorial guide",
+        "description": "",
+        "images": [""],
+        "coverImage": "",
+        "githubLink": "",
+        "liveSiteLink": "",
+        "primaryLanguage": "Angular"
+    },
+
+    {
+        "title": "Sassy",
+        "projectType": "A Bootstrap like SCSS Framework",
+        "description": "",
+        "images": [""],
+        "coverImage": "",
+        "githubLink": "",
+        "liveSiteLink": "",
+        "primaryLanguage": ""
+    },
+
+    {
+        "title": "Lightsaber",
+        "projectType": "A mock webstore",
+        "description": "",
+        "images": [""],
+        "coverImage": "",
+        "githubLink": "",
+        "liveSiteLink": "",
+        "primaryLanguage": ""
+    }
+]
