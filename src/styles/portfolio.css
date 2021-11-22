@@ -142,7 +142,7 @@ nav h1 {
 .collapsed-project {
     min-width: 500px;
     max-width: 500px;
-    padding:1rem;
+    padding:2rem;
     display:flex;
     flex-direction: column;
     box-shadow: 2px 2px 20px #84809E44;
@@ -150,10 +150,26 @@ nav h1 {
     margin:2rem 1rem;
     color: var(--color-dark-1);
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-.collapsed-project > img {
+.collapsed-project h4 {
+    margin-bottom: 0;
+}
+
+.collapsed-project p {
+    margin: 0.5rem 0;
+}
+
+.collapsed-project .image-container {
     height: 170px;
+    width:100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.collapsed-project img {
+    object-fit: cover;
 }
 
 
