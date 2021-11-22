@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import '../styles/project.css';
 
 
 export default function CollapsedProject({title, projectType, coverImage}) {
@@ -9,7 +8,7 @@ export default function CollapsedProject({title, projectType, coverImage}) {
     }
 
     return (
-        <Link to={formatTitle()} className="project">
+        <Link to={formatTitle()} className="collapsed-project">
             <img src={coverImage} alt={formatTitle()}/>
             <h4>{title}</h4>
             <p>{projectType}</p>

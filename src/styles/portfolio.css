@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {font-size: 3rem;}
 h2 {font-size: 2.4rem;}
 h3 {font-size: 1.9rem;}
+h4 {font-size: 1.25rem;}
 
 
 p {
@@ -135,6 +136,25 @@ nav h1 {
         Buttons
 **************************/
 
+/**************************
+    Collapsed Project
+**************************/
+.collapsed-project {
+    min-width: 500px;
+    max-width: 500px;
+    padding:1rem;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px #84809E44;
+    border-radius: 10px;
+    margin:2rem 1rem;
+    color: var(--color-dark-1);
+    text-decoration: none;
+}
+
+.collapsed-project > img {
+    height: 170px;
+}
 
 
 
