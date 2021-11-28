@@ -1,6 +1,7 @@
 import './styles/portfolio.css';
 import Home from './pages/Home';
 import ProjectList from './pages/ProjectList';
+import Project from './pages/Project';
 import NavigationMenu from './partials/NavigationMenu';
 import {
   BrowserRouter,
@@ -36,6 +37,9 @@ function RoutesModule() {
     </Route>
     <Route exact path="/projects">
       <ProjectList />
+    </Route>
+    <Route exact path="/projects/:projectName">
+      <Project />
     </Route>
    
     <Route path="/">

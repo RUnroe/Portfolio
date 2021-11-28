@@ -8,7 +8,7 @@ export default function CollapsedProject({title, projectType, coverImage}) {
     }
 
     return (
-        <Link to={formatTitle()} className="collapsed-project">
+        <Link to={"projects/" + formatTitle()} className="collapsed-project">
             <div className="image-container">
                 <img src={coverImage} alt={formatTitle()}/>
             </div>
