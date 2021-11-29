@@ -14,6 +14,9 @@ export default function Project() {
     const formatTitle = (title) => {
         return (title.toLowerCase().trim().replaceAll(" ", "-"));
     }
+    const formatDescription = (description) => {
+        return description;
+    }
 
     useEffect(() => {
         data.forEach(proj => {
@@ -36,18 +39,17 @@ export default function Project() {
                         <h4>{project.projectType}</h4>
                         <hr />
 
-                        <div className="back">Back</div>
+                        <Link to="/projects" className="back"><i className="fas fa-chevron-left"></i> Back</Link>
                     </div>
                     <div className="button-group">
-                        <a href="" className="btn secondary">View on GitHub</a>
-                        <a href="" className="btn secondary">View Live Site</a>
+                        {project.githubLink == "" ? <></> : <a href={project.githubLink} className="btn secondary">View on GitHub</a>}
+                        {project.liveSiteLink == "" ? <></> : <a href={project.liveSiteLink} className="btn secondary">View Live Site</a>}
                     </div>
 
                     <div className="image-section">
 
                     </div>
-                    <div className="description-section">
-                        
+                    <div className="description-section" dangerouslySetInnerHTML={{__html: project.description}}>
                     </div>
                 </div>
             </div>
