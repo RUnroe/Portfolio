@@ -3,8 +3,8 @@
         "title": "Quant Freelance",
         "projectType": "A Freelance Webstore",
         "description": "<h4>What is it?</h4><p>Quant Freelance is a webstore for freelancers to sell their services such as digital art and copy editing. Users are able to sign up as a customer or seller and can find any service they desire through searching or filtering. Sellers are able to customize their product pages however they like with the use of a built in website builder. This allows them to brand their product however they like while keeping the benefit of  a centralized webstore.</p><p>Quant Freelance was built as my Capstone project at Neumont College of Computer Science.</p><h4>The Technical Side</h4><p>Quant was split into two main parts: the front-end and the back-end. The front-end was created in React using hooks, while the backend was a simple Node Express server. The front-end was responsible for serving up the webpages to the user. The back-end kept track of user's sessions and controlled data access to the Mongo database. These two servers were hosted on a virtual private server behind an Nginx reverse proxy.</p><h4>What I Learned</h4><p>I did not see much value in a webstore that only ran locally, so the first thing I did was learn how to get this project on the internet. I learned how to purchase my own domain, and VPS. I then learned how to set up Nginx on the VPS and connect my domain to it.</p><p>After setting up my environment, I had to learn the new way of React with hooks and class components. I used this new knowledge to create my webpages and develop a mini website builder.</p>",
-        "images": ["homepage.png", "logo-small.png", "categories.png"],
-        "coverImage": "homepage.png",
+        "images": ["service-page-example.png", "logo-small.png", "categories.png"],
+        "coverImage": "logo-small.png",
         "githubLink": "https://github.com/RUnroe/QuantFreelanceWebStore",
         "liveSiteLink": "https://quant.ryanunroe.com/",
         "primaryLanguage": "React"

@@ -19,8 +19,8 @@ export default function Project() {
         let srcRoot = `/images/${formatTitle(title)}/`; 
 
         let tempImageList = [];
-        images.forEach(image => {
-            tempImageList.push(<div className={`img-container c${images.length}`}> <img src={`${srcRoot}${image}`}/> </div>);
+        images.forEach((image, index) => {
+            tempImageList.push(<div className={`image-container c${index}`}> <img src={`${srcRoot}${image}`}/> </div>);
         })
         setImagesJSX(
             <div className={`images s${images.length > 4 ? 4 : images.length}`}>
