@@ -151,6 +151,7 @@ nav h1 {
     color: var(--color-dark-1);
     text-decoration: none;
     box-sizing: border-box;
+    background-color: var(--color-light-1);
 }
 
 .collapsed-project h4 {
