@@ -1,3 +1,8 @@
+/**************************
+        Images
+**************************/
+
+
 .images {
     width:100%;
     max-width: 1100px;
@@ -40,7 +45,7 @@
     min-height:300px;
 }
 
-
+/* Border radius desktop version */
 @media all and (min-width:767px) {
     .images.s3 .c0 {
         border-top-left-radius: 18px;
@@ -54,6 +59,8 @@
     }
 }
 
+
+/* Border radius and grid layout for mobile version */
 @media all and (max-width:767px) {
     .images.s3 {
         display:grid;

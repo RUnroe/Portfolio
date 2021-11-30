@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import '../styles/project.css';
 import { useParams, Redirect, Link } from 'react-router-dom';
-import projectData from '../projects.json';
 const data = require('../projects.json');
 
 
