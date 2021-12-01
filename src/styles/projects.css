@@ -2,4 +2,6 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-image: url("../assets/hexbg.svg");
+    background-size: 1200px;
 }

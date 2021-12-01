@@ -1,3 +1,27 @@
+
+/**************************
+        Layout
+**************************/
+
+.project.section {
+    background-image: url("../assets/hexbg.svg");
+    background-size: 1200px;
+    padding-top:4rem;
+}
+
+
+
+.card.container {
+    background-color: var(--color-light-1);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding:1rem 4rem;
+}
+
+
+
+
+
 /**************************
         Images
 **************************/
@@ -7,6 +31,9 @@
     width:100%;
     max-width: 1100px;
     margin:1rem auto;
+    background: #FAFAFA;
+    border-radius: 18px;
+    padding: 2px;
 }
 
 

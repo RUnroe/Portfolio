@@ -45,8 +45,8 @@ export default function Project() {
     if(project) {
         return (
             <>
-            <div className="section">
-                <div className="container">
+            <div className="section project">
+                <div className="container card">
                     <div className="header">
                         <h3>{project.title}</h3>
                         <h4>{project.projectType}</h4>
