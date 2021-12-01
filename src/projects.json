@@ -14,8 +14,8 @@
         "title": "Bifrost",
         "projectType": "A Discord Clone",
         "description": "<h4>What is it?</h4><p>Bifrost is a lightweight clone of Discord. It runs on the internet and allows users to chat in real-time. Users can create different accounts, servers (guilds), and channels. Users also have control over their profile image and guild image.</p><p>Bifrost was created in a team of 3 for a project class at Neumont College of Computer Science.</p><h4>The Technical Side</h4><p>Both the front-end and the back-end of Bifrost is served up through a Node Express server. This Node server is running on a virtual private server behind an Nginx reverse proxy. The front-end uses pug to render the pages. A Cassandra database and snowflake identifiers are used to mimic Discord's back-end.</p><h4>What I Learned</h4><p>This was my first real web-based project in a group, so learning how to split up the work was a bit challenging. Thanks to good planning and following the scrum methodology, we were able to work well together. We all had a simple understanding of the technology we used, but this project allowed us to expand upon our knowledge even more. We also learned how to incorporate web sockets to allow messages to appear in real-time.</p>",
-        "images": [""],
-        "coverImage": "",
+        "images": ["landing.png", "app.png"],
+        "coverImage": "cover-image-2.png",
         "githubLink": "https://github.com/josephreed2600/bifrost",
         "liveSiteLink": "https://bifrost.jtreed.org/",
         "primaryLanguage": "JavaScript"
