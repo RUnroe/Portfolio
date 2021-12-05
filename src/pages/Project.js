@@ -14,15 +14,15 @@ export default function Project() {
     const formatTitle = (title) => {
         return (title.toLowerCase().trim().replaceAll(" ", "-"));
     }
-    const createImagesJSX = (title, images) => {
+    const createImagesJSX = (title, images, imageLayout) => {
         let srcRoot = `/images/${formatTitle(title)}/`; 
 
         let tempImageList = [];
         images.forEach((image, index) => {
-            tempImageList.push(<div className={`image-container c${index}`}> <img src={`${srcRoot}${image}`}/> </div>);
+            tempImageList.push(<div className={`image-container c${index} `}> <img src={`${srcRoot}${image}`}/> </div>);
         })
         setImagesJSX(
-            <div className={`images s${images.length > 4 ? 4 : images.length}`}>
+            <div className={`images ${imageLayout}`}>
                 {tempImageList}
             </div>
         );
@@ -35,7 +35,7 @@ export default function Project() {
             if(formatTitle(proj.title) === projectName) {
                 console.log(proj);
                 setProject(proj);
-                createImagesJSX(proj.title, proj.images);
+                createImagesJSX(proj.title, proj.images, proj.imageLayout);
             }
         });
         // if(!project) setRedirect(true);
