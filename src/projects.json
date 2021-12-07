@@ -48,26 +48,26 @@
     },
 
     {
-        "title": "Sassy",
-        "projectType": "A Bootstrap like SCSS Framework",
+        "title": "Bello",
+        "projectType": "A project management board",
         "description": "",
         "images": [""],
         "imageLayout": "layout",
-        "coverImage": "",
-        "githubLink": "https://github.com/RUnroe/Scss-Framework",
+        "coverImage": "cover-image.png",
+        "githubLink": "https://github.com/RUnroe/Bello",
         "liveSiteLink": "",
-        "primaryLanguage": "SCSS"
+        "primaryLanguage": "React"
     },
 
     {
-        "title": "Lightsaber",
-        "projectType": "A mock webstore",
-        "description": "",
-        "images": [""],
-        "imageLayout": "layout",
-        "coverImage": "",
-        "githubLink": "https://github.com/RUnroe/lightsaber-webstore",
+        "title": "Sassy",
+        "projectType": "A Bootstrap like SCSS Framework",
+        "description": "<h4>What is it?</h4><p>Sassy is an style framework similar to Bootstrap. It can be imported into any front-end web project for quick and easy styling. This website is documentation on how to use the style framework and was build with this style framework. Sassy helps the user align items on the screen in a grid based system as well as restyle elements.</p><p>This framework is made for the user's convenience. It allows users to create more complex elements with ease, such as nav bars, dropdowns, modals, alerts, and tooltips.</p><h4>The Technical Side</h4><p>Sassy was build in SCSS, which was compiled down to CSS. This documentation for Sassy was build using itself as a way to show off how it works and its simplicity. The documentation shows an example and code for each element and layout in Sassy.</p><h4>What I Learned</h4><p>This project was my introduction to a CSS extension language. It helped me learn how and why to use SCSS as well as make me think of all of the ways I could make standard styling easier for users.</p>",
+        "images": ["alignment.png", "btngroup.png", "slideshow.png"],
+        "imageLayout": "layout3a",
+        "coverImage": "cover-image.png",
+        "githubLink": "https://github.com/RUnroe/Scss-Framework",
         "liveSiteLink": "",
-        "primaryLanguage": "JavaScript"
+        "primaryLanguage": "SCSS"
     }
 ]
