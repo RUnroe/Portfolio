@@ -145,14 +145,15 @@
         border-bottom-right-radius: 18px;
     }
 
-    .images.layout2a .c0 {
+    .images.layout2a .c0, .images.layout2b .c0 {
         border-top-left-radius: 18px;
         border-bottom-left-radius: 18px;
     }
-    .images.layout2a .c1 {
+    .images.layout2a .c1, .images.layout2b .c1 {
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
     }
+    
 }
 
 

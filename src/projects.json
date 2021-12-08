@@ -50,9 +50,9 @@
     {
         "title": "Bello",
         "projectType": "A project management board",
-        "description": "",
-        "images": [""],
-        "imageLayout": "layout",
+        "description": "<h4>What is it?</h4><p>Bello is a lightweight clone of Trello, a project management board tool. Bello helps keep track of project tasks and how far along they are in the project. Bello is account based and supports multiple boards per user. Users can create lists within the boards and can drag their tasks from one list to the next.</p><p>Bello was originally created by other students. My teammate and I used this as an opportunity to learn how to work in existing code.</p><h4>The Technical Side</h4><p>Originally this website only had a front-end and was built on a simple Node Express server with Pug. My teammate and I took this chance to recreate the front-end in React while also setting up a back-end and Mongo database. We then added more features such as accounts, multiple boards per user, data persistence, and full board customization.</p><h4>What I Learned</h4><p>From working on this project, I learned how to work in existing code. Learning how to read and understand someone else's code was not easy, but it helped me understand the different ways of looking at a problem. I also learned how to break up tasks into sizable chunks and create accurate time estimates.</p>",
+        "images": ["boards.png", "app.png"],
+        "imageLayout": "layout2a",
         "coverImage": "cover-image.png",
         "githubLink": "https://github.com/RUnroe/Bello",
         "liveSiteLink": "",
