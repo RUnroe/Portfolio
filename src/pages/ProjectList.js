@@ -28,7 +28,7 @@ function ProjectList() {
         <>
         <div className="section">
             <div className="container">
-                <h3>Ryan's Projects</h3>
+                <h3>Ryan's Top Projects</h3>
                 <p>All projects can be found on <a href="https://github.com/RUnroe/" target="_blank">GitHub</a></p>
             </div>
             <div id="projectContainer" className="container">

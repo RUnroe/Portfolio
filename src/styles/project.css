@@ -66,10 +66,30 @@
     max-width: 1100px;
 }
 
+
+
+
+.styles-module_wrapper__1I_qj {
+    top: 4rem !important;
+    height: calc(100% - 4rem) !important;
+}
+
+.styles-module_close__2I1sI, .styles-module_navigation__1pqAE  {
+    /* color: var(--color-dark-1) !important; */
+    opacity:0.7 !important;
+}
+.styles-module_close__2I1sI:hover, .styles-module_navigation__1pqAE:hover  {
+    /* color: var(--color-dark-1) !important; */
+    opacity:1 !important;
+}
+.styles-module_image__2hdkJ {
+    max-height: 95% !important;
+    max-width: 95% !important;
+}
+
 /**************************
         Images
 **************************/
-
 
 .images {
     width:100%;
