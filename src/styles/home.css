@@ -163,6 +163,26 @@ body,
     margin:6px 0;
 }
 
+.award-section-break {
+    position: relative;
+    padding:1.5rem 0;
+}
+.award-section-break hr {
+    background-color: var(--color-dark-2);
+    border:none;
+    outline: none;
+    height:1.5px;
+}
+
+.award-icon {
+    width:45px;
+    transform: translate(-50%, -50%);
+    position:absolute;
+    left:50%;
+    top:50%;
+
+}
+
 
 /**************************
         Contact Me

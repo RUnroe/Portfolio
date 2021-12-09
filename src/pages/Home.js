@@ -34,8 +34,14 @@ function Home() {
             <div className="section about-me">
                 <div className="container">
                     <h3>About Me</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p>
+                        I am a senior at <a href="https://www.neumont.edu/" target="_blank">Neumont College of Computer Science</a> majoring in Web Design and Development. 
+                        Growing up, I had a lot of interest in engineering. Throughout high school, I participated 
+                        in my schools <a href="https://www.pltw.org/our-programs/pltw-engineering" target="_blank"> PLTW engineering</a> courses. These courses helped expose me to the different 
+                        types of engineering and eventually introduced me to computer science, which I took quite a
+                        liking to. I took additional coding courses through the rest of high school and then moved
+                        to Salt Lake City, UT to attend Neumont College. Here, I found that web is my passion, 
+                        and that both the development and the design side spark my interest.  
                     </p>
                 </div>
             </div>
@@ -45,9 +51,24 @@ function Home() {
                 <div className="container ex">
                     <div className="left">
                         <h3>Skills</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p>
+                            Throughout my high school PLTW engineering courses, I was fortunate to learn about CAD,
+                            mechanisms, automation, logic and computational thinking, digital electronics, and a product
+                            development process. High school also helped me learn HTML, CSS, JS, Java, PHP, and SQL. 
                         </p>
+                        <p>
+                            Neumont walked me back through the basics and helped reinforce widely used concepts such as
+                            object oriented programming. Covering different parts of multiple programming languages
+                            helped me gain the ability to teach myself new concepts and skills. The Web Design and 
+                            Development degree helped me learn a lot of valuable skills such as graphic design, API 
+                            Development, Database Administration, Node.JS, Apache, React, Angular, and Spring Boot.  
+                        </p>
+                        <div className="award-section-break">
+                            <hr />
+                            <img className="award-icon" src="/images/award-icon.png"/>
+                        </div>
+                        <p>While developing my coding skills, I had a few opportunities to participate in competitions. In 2017, I represented my high school in the Spark App League 24hr Game Jam, where I won the Best Overall Game award. </p>
+                        <p>In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our Bifrost project. This project ended up winning the Overall Audience Favorite award.</p>
                     </div>
                     <div className="right">
                         <div className="icons-container">
