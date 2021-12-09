@@ -274,7 +274,7 @@ body,
     }
     .skills .icons-container {
         top:0;
-        margin:1rem 0;
+        margin:2rem auto 1rem;
         grid-template-columns: repeat(6, auto);
     }
     .skills .icons-container i {

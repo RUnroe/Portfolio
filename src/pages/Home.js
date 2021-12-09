@@ -1,5 +1,8 @@
 import React from "react";
 import '../styles/home.css';
+import {
+    Link,
+  } from "react-router-dom";
 function Home() {
 
     return(
@@ -67,8 +70,14 @@ function Home() {
                             <hr />
                             <img className="award-icon" src="/images/award-icon.png"/>
                         </div>
-                        <p>While developing my coding skills, I had a few opportunities to participate in competitions. In 2017, I represented my high school in the Spark App League 24hr Game Jam, where I won the Best Overall Game award. </p>
-                        <p>In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our Bifrost project. This project ended up winning the Overall Audience Favorite award.</p>
+                        <p>
+                            While developing my coding skills, I had a few opportunities to participate in competitions. 
+                            In 2017, I represented my high school in the Spark App League 24hr Game Jam, where I won the Best Overall Game award. 
+                        </p>
+                        <p>
+                            In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our 
+                            <Link to="/projects/bifrost">Bifrost project</Link>. This project ended up winning the Overall Audience Favorite award.
+                        </p>
                     </div>
                     <div className="right">
                         <div className="icons-container">
