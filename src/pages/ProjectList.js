@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import '../styles/projects.css';
 import projectData from '../projects.json';
 import CollapsedProject from "../partials/CollapsedProject";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ProjectList() {
     const [projectsJSX, setProjectsJSX] = useState([]);
@@ -12,6 +13,14 @@ function ProjectList() {
         getProjectsJSX();
     }, []);
 
+    useEffect(() => {
+        AOS.init({
+            offset: 100,
+            duration: 350,
+            easing: 'ease-in-sine',
+            });
+        AOS.refresh();
+    }, [projectsJSX]);
 
     const getProjectsJSX = () => {
         const tempArray = [];

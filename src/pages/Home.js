@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../styles/home.css';
-import {
-    Link,
-  } from "react-router-dom";
-function Home() {
+import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+function Home() {
+    useEffect(() => {
+        AOS.init({
+            offset: 120,
+            duration: 300,
+            easing: 'ease-in-sine',
+          });
+        AOS.refresh();
+      }, []);
     return(
         <>
         <div className="section gradient hero">
@@ -14,20 +22,20 @@ function Home() {
                     <h2 className="uppercase">Web Design and Development</h2>
                 </div>
                 <div className="socials-container">
-                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank">
+                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" data-aos="zoom-in" data-aos-duration="200">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a className="social-icon github" href="https://github.com/RUnroe/" target="_blank">
+                    <a className="social-icon github" href="https://github.com/RUnroe/" target="_blank" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50">
                         <i className="fab fa-github"></i>
                     </a>
-                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank">
+                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="100">
                         <i className="fas fa-envelope"></i>
                     </a>
                 </div>
 
                 <div className="hexagon">
                     <div className="hexagon-in1">
-                        <div className="hex-image"></div>
+                        <div className="hex-image" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300"></div>
                     </div>
                 </div>
             </div>
@@ -68,7 +76,7 @@ function Home() {
                         </p>
                         <div className="award-section-break">
                             <hr />
-                            <img className="award-icon" src="/images/award-icon.png"/>
+                            <img className="award-icon" src="/images/award-icon.png" />
                         </div>
                         <p>
                             While developing my coding skills, I had a few opportunities to participate in competitions. 
@@ -81,29 +89,29 @@ function Home() {
                     </div>
                     <div className="right">
                         <div className="icons-container">
-                            <i className="fab fa-html5"></i>
-                            <i className="fab fa-css3"></i>
-                            <i className="fab fa-js-square"></i>
+                            <i className="fab fa-html5" data-aos="fade-up"></i>
+                            <i className="fab fa-css3" data-aos="fade-up"></i>
+                            <i className="fab fa-js-square" data-aos="fade-up"></i>
 
-                            <i className="fab fa-node-js"></i>
-                            <i className="fab fa-react"></i>
-                            <i className="fab fa-angular"></i>
+                            <i className="fab fa-node-js" data-aos="fade-up"></i>
+                            <i className="fab fa-react" data-aos="fade-up"></i>
+                            <i className="fab fa-angular" data-aos="fade-up"></i>
 
-                            <i className="devicon-spring-plain"></i>
-                            <i className="fab fa-git-alt"></i>
-                            <i className="devicon-csharp-plain"></i>
+                            <i className="devicon-spring-plain" data-aos="fade-up"></i>
+                            <i className="fab fa-git-alt" data-aos="fade-up"></i>
+                            <i className="devicon-csharp-plain" data-aos="fade-up"></i>
 
-                            <i className="fab fa-java"></i>
-                            <i className="devicon-php-plain"></i>
-                            <i className="fab fa-python"></i>
+                            <i className="fab fa-java" data-aos="fade-up"></i>
+                            <i className="devicon-php-plain" data-aos="fade-up"></i>
+                            <i className="fab fa-python" data-aos="fade-up"></i>
 
-                            <i className="devicon-nginx-original"></i>
-                            <i className="devicon-raspberrypi-line"></i>
-                            <i className="fab fa-linux"></i>
+                            <i className="devicon-nginx-original" data-aos="fade-up"></i>
+                            <i className="devicon-raspberrypi-line" data-aos="fade-up"></i>
+                            <i className="fab fa-linux" data-aos="fade-up"></i>
 
-                            <i className="devicon-mongodb-plain"></i>
-                            <i className="devicon-illustrator-plain"></i>
-                            <i className="devicon-figma-plain"></i>
+                            <i className="devicon-mongodb-plain" data-aos="fade-up"></i>
+                            <i className="devicon-illustrator-plain" data-aos="fade-up"></i>
+                            <i className="devicon-figma-plain" data-aos="fade-up"></i>
                         </div>
                     </div>
                 </div>
@@ -117,10 +125,10 @@ function Home() {
                         Feel free to reach out to me via email or LinkedIn! 
                     </p>
                     <div className="socials-container">
-                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank">
+                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" data-aos="zoom-in" data-aos-duration="200" data-aos-offset="30" >
                         <i className="fas fa-envelope"></i>
                     </a>
-                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank">
+                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50" data-aos-offset="30">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                 </div>

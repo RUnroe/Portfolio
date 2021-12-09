@@ -154,6 +154,11 @@ nav h1 {
     Collapsed Project
 **************************/
 .collapsed-project {
+    transition:transform 0.3s ease; 
+    color: var(--color-dark-1);
+    text-decoration: none;
+}
+.collapsed-project > div {
     min-width: 500px;
     max-width: 500px;
     padding:1.5rem;
@@ -162,11 +167,10 @@ nav h1 {
     box-shadow: 2px 2px 20px #84809E44;
     border-radius: 10px;
     margin:2rem 1rem;
-    color: var(--color-dark-1);
-    text-decoration: none;
+    
     box-sizing: border-box;
     background-color: var(--color-light-1);
-    transition:transform 0.3s ease; 
+    
 
 }
 
