@@ -27,7 +27,7 @@ function ProjectList() {
 
         //loop over project data and create project partials
         projectData.forEach(project => {
-            tempArray.push(<CollapsedProject title={project.title} projectType={project.projectType} coverImage={project.coverImage} />)
+            tempArray.push(<CollapsedProject title={project.title} projectType={project.projectType} coverImage={project.coverImage} primaryLanguage={project.primaryLanguage} languageColor={project.languageColor} />)
         });
 
         setProjectsJSX(tempArray);

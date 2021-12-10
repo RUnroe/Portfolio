@@ -11,8 +11,6 @@
     --color-light-2: #FAFAFA;
     --color-primary: #64a5f0;
 
-    
-    --color-yellow: #F3DD16;
 }
 
 html, body {
@@ -217,6 +215,18 @@ nav h1 {
     width:100%;
     border-radius: 6px;
     overflow: hidden;
+    position: relative;
+}
+.collapsed-project .image-container .language-tag {
+    position: absolute;
+    color:var(--color-light-1);
+    top:8px;
+    right:8px;
+    border-radius: 100vh;
+    padding:4px 8px;
+    z-index:10;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .collapsed-project img {

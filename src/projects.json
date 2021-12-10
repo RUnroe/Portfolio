@@ -8,7 +8,8 @@
         "coverImage": "cover-image.png",
         "githubLink": "https://github.com/RUnroe/QuantFreelanceWebStore",
         "liveSiteLink": "https://quant.ryanunroe.com/",
-        "primaryLanguage": "React"
+        "primaryLanguage": "React",
+        "languageColor": ["#ffffff", "#524E66"]
     },
 
     {
@@ -20,7 +21,8 @@
         "coverImage": "cover-image-2.png",
         "githubLink": "https://github.com/josephreed2600/bifrost",
         "liveSiteLink": "https://bifrost.jtreed.org/",
-        "primaryLanguage": "JavaScript"
+        "primaryLanguage": "JavaScript",
+        "languageColor": ["#ffffff", "#49494A"]
     },
 
     {
@@ -32,7 +34,8 @@
         "coverImage": "cover-image.png",
         "githubLink": "https://github.com/RUnroe/VideoGameLibrary",
         "liveSiteLink": "",
-        "primaryLanguage": "MVC ASP.NET"
+        "primaryLanguage": "ASP.NET",
+        "languageColor": ["#ffffff", "#4A46E2"]
     },
 
     {
@@ -44,7 +47,8 @@
         "coverImage": "cover-image.png",
         "githubLink": "https://github.com/RUnroe/RasPiGettingStarted",
         "liveSiteLink": "",
-        "primaryLanguage": "Angular"
+        "primaryLanguage": "Angular",
+        "languageColor": ["#ffffff", "#DD0031"]
     },
 
     {
@@ -56,7 +60,8 @@
         "coverImage": "cover-image.png",
         "githubLink": "https://github.com/RUnroe/Bello",
         "liveSiteLink": "",
-        "primaryLanguage": "React"
+        "primaryLanguage": "React",
+        "languageColor": ["#ffffff", "#419fd9"]
     },
 
     {
@@ -68,6 +73,7 @@
         "coverImage": "cover-image.png",
         "githubLink": "https://github.com/RUnroe/Scss-Framework",
         "liveSiteLink": "",
-        "primaryLanguage": "SCSS"
+        "primaryLanguage": "SCSS",
+        "languageColor": ["#ffffff", "#7165AD"]
     }
 ]
