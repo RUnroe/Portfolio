@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
-function NavigationMenu() {
+function NavigationMenu({onHomePage}) {
+    const [pageTopOffset, setPageTopOffset] = useState(0);
+
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setPageTopOffset(position);
+    };
+    
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+    
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
     return(
-        <nav>
+        <nav className={onHomePage && !pageTopOffset ? "over-hero" : ""}>
             <div className="nav-content">
                 <div className="nav-logo">
                     <Link to="/">

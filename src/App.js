@@ -10,23 +10,27 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 
 function App() {
+  const [onHomePage, setOnHomePage] = useState(true);
   return (
     <BrowserRouter>
-    <NavigationMenu />
+    <NavigationMenu onHomePage={onHomePage}/>
     
-    <div id="main">
-      <RoutesModule />
+    <div id="main" className={onHomePage ? "home": ""}>
+      <RoutesModule setOnHomePage={setOnHomePage}/>
     </div>
   </BrowserRouter>
   );
 }
 
-function RoutesModule() {
+function RoutesModule({setOnHomePage}) {
   let location = useLocation();
   useEffect(() => {
+      if(location && location.pathname) {
+        setOnHomePage( location.pathname.includes("/projects") === false);
+      }
       window.scrollTo(0, 0);
     }, [location]);
   
