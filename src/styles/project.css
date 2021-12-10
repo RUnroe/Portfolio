@@ -202,6 +202,21 @@
     
     }
 
+    .images.layout2a {
+        display:grid;
+        grid-template-columns: auto;
+    }
+    
+    .images.layout2b {
+        display:grid;
+        grid-template-columns: auto;
+    }
+
+    .images.layout2a .c0 {
+        min-width:unset;
+        min-height:unset;
+    }
+
 
     .project .button-group {
         padding-left:0;
