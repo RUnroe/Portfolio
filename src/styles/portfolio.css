@@ -240,10 +240,11 @@ nav h1 {
         padding: 0 2rem;
     }
 
-    .collapsed-project {
+    .collapsed-project > div {
         max-width: 500px;
         min-width: 250px;
         margin:1.5rem 0;
         padding:1rem;
     }
+
 }

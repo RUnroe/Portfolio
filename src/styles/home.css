@@ -79,18 +79,20 @@ body,
     font-size: 1.6rem;
 }
 
-
-
-.hex-image {
+.hexagon-in1 {
     position:absolute;
     right: 3rem;
     top:2rem;
+    z-index:100;
+    width: fit-content;
+}
+
+.hex-image {
     background-image: url("../assets/hexHeadshot.png");
     width: 400px;
     height: 400px;
     background-position: center;
     background-size: contain;
-    z-index:100;
 }
 /**************************
         Home Content
@@ -222,11 +224,13 @@ body,
 **************************/
 
 @media all and (max-width:900px) {
+    .hexagon-in1 {
+        right: 1rem;
+        top: 6rem;
+    }
     .hex-image {
         width: 300px;
         height: 300px;
-        right: 1rem;
-        top: 6rem;
     }
     .about-me p {
         margin-right:300px;
@@ -238,10 +242,12 @@ body,
     html {
         font-size: 14px;
     }
-    .hex-image {
+    .hexagon-in1 {
         left:50%;
         transform: translateX(-50%);
         top:10rem;
+    }
+    .hex-image {
         width:265px;
         height:265px;
     }

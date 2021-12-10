@@ -15,7 +15,7 @@ function ProjectList() {
 
     useEffect(() => {
         AOS.init({
-            offset: 100,
+            offset: 80,
             duration: 350,
             easing: 'ease-in-sine',
             });
