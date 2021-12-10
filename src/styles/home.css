@@ -45,11 +45,15 @@ body,
     flex-direction: row;
 }
 
+.social-icon-wrapper {
+    margin-right:1rem;
+}
+
 .social-icon {
+    border-radius: 100vh;
     color: var(--color-light-2);
     background-color: var(--color-dark-2);
-    border-radius: 100vh;
-    margin-right:1rem;
+    transition:background-color 0.3s ease;
     width:36px;
     height:36px;
     text-align:center;
@@ -59,6 +63,12 @@ body,
     align-items: center;
     text-decoration: none;
     font-size: 1.25rem;
+}
+.social-icon:visited {
+    color: var(--color-light-2);
+}
+.social-icon:hover { 
+    background-color: var(--color-primary);
 }
 
 .social-icon:last-child {

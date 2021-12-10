@@ -22,15 +22,21 @@ function Home() {
                     <h2 className="uppercase">Web Design and Development</h2>
                 </div>
                 <div className="socials-container">
-                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" data-aos="zoom-in" data-aos-duration="200">
+                    <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200">
+                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a className="social-icon github" href="https://github.com/RUnroe/" target="_blank" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50">
+                    </div>
+                    <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50">
+                    <a className="social-icon github" href="https://github.com/RUnroe/" target="_blank" >
                         <i className="fab fa-github"></i>
                     </a>
-                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="100">
+                    </div>
+                    <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="100">
+                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank">
                         <i className="fas fa-envelope"></i>
                     </a>
+                    </div>
                 </div>
 
                 <div className="hexagon">
@@ -80,11 +86,10 @@ function Home() {
                         </div>
                         <p>
                             While developing my coding skills, I had a few opportunities to participate in competitions. 
-                            In 2017, I represented my high school in the Spark App League 24hr Game Jam, where I won the Best Overall Game award. 
+                            In 2017, I represented my high school in the Spark App League (24 hour) Game Jam, where I won the Best Overall Game award. 
                         </p>
                         <p>
-                            In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our 
-                            <Link to="/projects/bifrost">Bifrost project</Link>. This project ended up winning the Overall Audience Favorite award.
+                            In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our <Link to="/projects/bifrost">Bifrost project</Link>. This project ended up winning the Overall Audience Favorite award.
                         </p>
                     </div>
                     <div className="right">
@@ -125,12 +130,16 @@ function Home() {
                         Feel free to reach out to me via email or LinkedIn! 
                     </p>
                     <div className="socials-container">
-                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" data-aos="zoom-in" data-aos-duration="200" data-aos-offset="30" >
+                    <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-offset="30">
+                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" >
                         <i className="fas fa-envelope"></i>
                     </a>
-                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50" data-aos-offset="30">
+                    </div>
+                    <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50" data-aos-offset="30">
+                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" >
                         <i className="fab fa-linkedin-in"></i>
                     </a>
+                    </div>
                 </div>
                 </div>
 
