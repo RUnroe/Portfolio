@@ -52,7 +52,8 @@ function Home() {
                 <div className="container">
                     <h3>About Me</h3>
                     <p>
-                        I am a senior at <a href="https://www.neumont.edu/" target="_blank">Neumont College of Computer Science</a> majoring in Web Design and Development. 
+                        I am currently working for the State of Utah developing and designing webpages in React. 
+                        In September of 2022, I graduated from <a href="https://www.neumont.edu/" target="_blank">Neumont College of Computer Science</a> as Valedictorian with a degree in Web Design and Development. <br />
                         Growing up, I had a lot of interest in engineering. Throughout high school, I participated 
                         in my schools <a href="https://www.pltw.org/our-programs/pltw-engineering" target="_blank"> PLTW engineering</a> courses. These courses helped expose me to the different 
                         types of engineering and eventually introduced me to computer science, which I took quite a
@@ -85,11 +86,14 @@ function Home() {
                             <img className="award-icon" src="/images/award-icon.png" />
                         </div>
                         <p>
-                            While developing my coding skills, I had a few opportunities to participate in competitions. 
-                            In 2017, I represented my high school in the Spark App League (24 hour) Game Jam, where I won the Best Overall Game award. 
-                        </p>
+                            In 2022, I graduated from Neumont College of Computer Science as Valedictorian.
+                            </p>
                         <p>
                             In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our <Link to="/projects/bifrost">Bifrost project</Link>. This project ended up winning the Overall Audience Favorite award.
+                        </p>
+                        <p>
+                            While developing my coding skills, I had a few opportunities to participate in competitions. 
+                            In 2017, I represented my high school in the Spark App League (24 hour) Game Jam, where I won the Best Overall Game award. 
                         </p>
                     </div>
                     <div className="right">
