@@ -60,7 +60,7 @@
         "imageLayout": "layout2b",
         "coverImage": "cover-image.png",
         "githubLink": "https://github.com/RUnroe/RasPiGettingStarted",
-        "liveSiteLink": "",
+        "liveSiteLink": "https://raspi.ryanunroe.com/page-1",
         "primaryLanguage": "Angular",
         "languageColor": ["#ffffff", "#DD0031"]
     },
