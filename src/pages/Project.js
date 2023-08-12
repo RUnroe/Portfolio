@@ -24,7 +24,7 @@ export default function Project() {
 
         let tempImageList = [];
         images.forEach((image, index) => {
-            tempImageList.push(<div className={`image-container c${index} `}> <img src={`${srcRoot}${image}`} onClick={ () => openImageViewer(index) } key={ index }/> </div>);
+            tempImageList.push(<div className={`image-container c${index} `}> <img src={`${srcRoot}${image}`} alt={image} onClick={ () => openImageViewer(index) } key={ index }/> </div>);
         })
 
         
@@ -56,14 +56,16 @@ export default function Project() {
       
 
     useEffect(() => {
+        let foundProject = false;
         data.forEach(proj => {
             if(formatTitle(proj.title) === projectName) {
                 console.log(proj);
                 setProject(proj);
+                foundProject = true;
                 createImagesJSX(proj.title, proj.images, proj.imageLayout);
             }
         });
-        // if(!project) setRedirect(true);
+        if(!foundProject) setRedirect(true);
     }, []);
 
     if(redirect) return <Navigate to="/"/>
@@ -80,8 +82,8 @@ export default function Project() {
                         <Link to="/projects" className="back"><i className="fas fa-chevron-left"></i> Back</Link>
                     </div>
                     <div className="button-group">
-                        {project.githubLink == "" ? <></> : <a href={project.githubLink} target="_blank" className="btn secondary">View on GitHub</a>}
-                        {project.liveSiteLink == "" ? <></> : <a href={project.liveSiteLink} target="_blank" className="btn secondary">View Live Site</a>}
+                        {project.githubLink && <a href={project.githubLink} target="_blank" rel="noreferrer" className="btn secondary">View on GitHub</a>}
+                        {project.liveSiteLink && <a href={project.liveSiteLink} target="_blank" rel="noreferrer"  className="btn secondary">View Live Site</a>}
                     </div>
 
                     <div className="image-section">
