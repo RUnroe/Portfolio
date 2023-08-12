@@ -5,10 +5,10 @@ import Project from './pages/Project';
 import NavigationMenu from './partials/NavigationMenu';
 import {
   BrowserRouter,
-  Redirect,
-  Switch,
+  Routes,
   Route,
   useLocation,
+  Navigate,
 } from "react-router-dom";
 import {useEffect, useState} from 'react';
 
@@ -35,21 +35,12 @@ function RoutesModule({setOnHomePage}) {
     }, [location]);
   
   return (
-    <Switch>
-    <Route exact path="/">
-      <Home/>
-    </Route>
-    <Route exact path="/projects">
-      <ProjectList />
-    </Route>
-    <Route exact path="/projects/:projectName">
-      <Project />
-    </Route>
-   
-    <Route path="/">
-      <Redirect to={{pathname: '/'}} />
-    </Route>
-  </Switch>
+    <Routes>
+    <Route exact path="/" element={<Home/>} />
+    <Route exact path="/projects" element={<ProjectList />} />
+    <Route exact path="/projects/:projectName" element={<Project />} />
+    <Route path="/" element={<Navigate to={{pathname: '/'}} />} />
+  </Routes>
   )
 }
 

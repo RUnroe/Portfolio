@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
 import '../styles/project.css';
-import { useParams, Redirect, Link } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import ImageViewer from 'react-simple-image-viewer';
 const data = require('../projects.json');
 
@@ -66,7 +66,7 @@ export default function Project() {
         // if(!project) setRedirect(true);
     }, []);
 
-    if(redirect) return <Redirect to="/"/>
+    if(redirect) return <Navigate to="/"/>
     if(project) {
         return (
             <>
