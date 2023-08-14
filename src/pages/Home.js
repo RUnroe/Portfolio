@@ -23,17 +23,17 @@ function Home() {
                 </div>
                 <div className="socials-container">
                     <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200">
-                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" rel="noreferrer">
+                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" rel="noreferrer" aria-label="Navigate to Ryan's LinkedIn">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                     </div>
                     <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50">
-                    <a className="social-icon github" href="https://github.com/RUnroe/" target="_blank" rel="noreferrer">
+                    <a className="social-icon github" href="https://github.com/RUnroe/" target="_blank" rel="noreferrer" aria-label="Navigate to Ryan's Github">
                         <i className="fab fa-github"></i>
                     </a>
                     </div>
                     <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="100">
-                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" rel="noreferrer">
+                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" rel="noreferrer" aria-label="Send me an email">
                         <i className="fas fa-envelope"></i>
                     </a>
                     </div>
@@ -53,9 +53,9 @@ function Home() {
                     <h3>About Me</h3>
                     <p>
                         I am currently working for the State of Utah developing and designing webpages in React. 
-                        In September of 2022, I graduated from <a href="https://www.neumont.edu/" target="_blank" rel="noreferrer">Neumont College of Computer Science</a> as Valedictorian with a degree in Web Design and Development. <br />
+                        In September of 2022, I graduated from <a href="https://www.neumont.edu/" target="_blank" rel="noreferrer" aria-label="View Ryan's alma mater">Neumont College of Computer Science</a> as Valedictorian with a degree in Web Design and Development. <br />
                         Growing up, I had a lot of interest in engineering. Throughout high school, I participated 
-                        in my schools <a href="https://www.pltw.org/our-programs/pltw-engineering" target="_blank" rel="noreferrer"> PLTW engineering</a> courses. These courses helped expose me to the different 
+                        in my schools <a href="https://www.pltw.org/our-programs/pltw-engineering" target="_blank" rel="noreferrer" aria-label="View PLTW Enginerring"> PLTW engineering</a> courses. These courses helped expose me to the different 
                         types of engineering and eventually introduced me to computer science, which I took quite a
                         liking to. I took additional coding courses through the rest of high school and then moved
                         to Salt Lake City, UT to attend Neumont College. Here, I found that web is my passion, 
@@ -135,12 +135,12 @@ function Home() {
                     </p>
                     <div className="socials-container">
                     <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-offset="30">
-                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" rel="noreferrer">
+                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" rel="noreferrer" aria-label="Reach out to me via email">
                         <i className="fas fa-envelope"></i>
                     </a>
                     </div>
                     <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50" data-aos-offset="30">
-                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" rel="noreferrer">
+                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" rel="noreferrer" aria-label="Reach out to me via LinkedIn">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
                     </div>

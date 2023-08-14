@@ -82,8 +82,8 @@ export default function Project() {
                         <Link to="/projects" className="back"><i className="fas fa-chevron-left"></i> Back</Link>
                     </div>
                     <div className="button-group">
-                        {project.githubLink && <a href={project.githubLink} target="_blank" rel="noreferrer" className="btn secondary">View on GitHub</a>}
-                        {project.liveSiteLink && <a href={project.liveSiteLink} target="_blank" rel="noreferrer"  className="btn secondary">View Live Site</a>}
+                        {project.githubLink && <a href={project.githubLink} target="_blank" rel="noreferrer" className="btn secondary" aria-label="View this project on Github">View on GitHub</a>}
+                        {project.liveSiteLink && <a href={project.liveSiteLink} target="_blank" rel="noreferrer"  className="btn secondary" aria-label="View this project">View Live Site</a>}
                     </div>
 
                     <div className="image-section">
