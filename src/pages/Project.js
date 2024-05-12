@@ -19,7 +19,14 @@ export default function Project() {
     const formatTitle = (title) => {
         return (title.toLowerCase().trim().replaceAll(" ", "-"));
     }
-    const createImagesJSX = (title, images, imageLayout) => {
+    
+
+    const openImageViewer = useCallback((index) => {
+        setCurrentImage(index);
+        setIsViewerOpen(true);
+      }, []);
+
+    const createImagesJSX = useCallback((title, images, imageLayout) => {
         let srcRoot = `/images/${formatTitle(title)}/`; 
 
         let tempImageList = [];
@@ -33,14 +40,8 @@ export default function Project() {
                 {tempImageList}
             </div>
         );
-
         
-    }  
-    const openImageViewer = useCallback((index) => {
-        setCurrentImage(index);
-        setIsViewerOpen(true);
-      }, []);
-    
+    }, [openImageViewer]);
     const closeImageViewer = () => {
         setCurrentImage(0);
         setIsViewerOpen(false);
@@ -53,9 +54,8 @@ export default function Project() {
         });
         return finalLinks;
     }
-      
-
-    useEffect(() => {
+    
+    const generateProjects = useCallback(() => {
         let foundProject = false;
         data.forEach(proj => {
             if(formatTitle(proj.title) === projectName) {
@@ -66,7 +66,11 @@ export default function Project() {
             }
         });
         if(!foundProject) setRedirect(true);
-    }, []);
+    }, [createImagesJSX, projectName]);
+
+    useEffect(() => {
+        generateProjects();
+    }, [generateProjects]);
 
     if(redirect) return <Navigate to="/"/>
     if(project) {

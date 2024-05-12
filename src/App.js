@@ -32,7 +32,7 @@ function RoutesModule({setOnHomePage}) {
         setOnHomePage( location.pathname.includes("/projects") === false);
       }
       window.scrollTo(0, 0);
-    }, [location]);
+    }, [location, setOnHomePage]);
   
   return (
     <Routes>
