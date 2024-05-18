@@ -11,6 +11,18 @@
         "liveSiteLink": "",
         "primaryLanguage": "SCSS",
         "languageColor": ["#ffffff", "#7165AD"]
+    },
+    {
+        "title": "Ascension",
+        "projectType": "A video game renting and tracking website",
+        "description": "<h4>What is it?</h4><p>Ascension is a website that allows users to keep track of their video games. It lets them add and remove games within their library and then gives the ability to filter and search for games. Once games are in the library, they can be rented out to friends. Ascension keeps track of who a game is rented out to and when it was rented out.</p> <p>Ascension was created as a final project for a class at Neumont College of Computer Science.</p><h4>The Technical Side</h4><p>Ascension was built as an ASP.NET MVC (model view controller) application. It uses sessions and a local SQL Server database to allow multiple accounts to use the site and persist their data. The pages were styled with custom CSS and Bootstrap.</p><h4>What I Learned</h4><p>This was one of my first projects in ASP.NET, so there was a lot for me to learn. Throughout this project, I reinforced my knowledge on how to create a basic ASP.NET MVC application while also learning how to integrate with database using roles, migrations, and model binding.</p>",
+        "images": ["app.png", "cover-image.png", "filters.png"],
+        "imageLayout": "layout3a",
+        "coverImage": "cover-image.png",
+        "githubLink": "https://github.com/RUnroe/VideoGameLibrary",
+        "liveSiteLink": "",
+        "primaryLanguage": "ASP.NET",
+        "languageColor": ["#ffffff", "#4A46E2"]
     }
 
 ]
