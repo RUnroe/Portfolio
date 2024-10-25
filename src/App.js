@@ -1,4 +1,3 @@
-import './styles/portfolio.css';
 import Home from './pages/Home';
 import ProjectList from './pages/ProjectList';
 import Project from './pages/Project';

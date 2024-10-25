@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import '../styles/projects.css';
 import projectData from '../projects.json';
 import CollapsedProject from "../partials/CollapsedProject";
 import AOS from "aos";

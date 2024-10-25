@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useCallback } from "react";
-import '../styles/project.css';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import ImageViewer from 'react-simple-image-viewer';
 const data = require('../projects.json');
