@@ -1,22 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import SocialRow from "../components/socials/SocialRow";
 import siteData from "../siteData";
 import TechnologyIcon from "../components/TechnologyIcon";
 
-function Home() {
-    useEffect(() => {
-        AOS.init({
-            offset: 120,
-            duration: 300,
-            easing: 'ease-in-sine',
-            });
-        AOS.refresh();
-    }, []);
-
+const Home = () => {
+   
 
 
     return(
@@ -109,18 +99,7 @@ function Home() {
                         Feel free to reach out to me via email or LinkedIn! 
                     </p>
                     <SocialRow contactTagsOnly/>
-                    {/* <div className="socials-container">
-                        <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-offset="30">
-                            <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" rel="noreferrer" aria-label="Reach out to me via email">
-                                <i className="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                        <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50" data-aos-offset="30">
-                            <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" rel="noreferrer" aria-label="Reach out to me via LinkedIn">
-                                <i className="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div> */}
+                
                 </div>
 
             </div>

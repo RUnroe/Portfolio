@@ -1,11 +1,10 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { useParams, Navigate, Link } from 'react-router-dom';
 import ImageViewer from 'react-simple-image-viewer';
-// const data = require('../projects.json');
 import siteData from "../siteData";
 
 
-export default function Project() {
+const Project = () => {
     //get name from query string
     const { projectName } = useParams();
     const [project, setProject] = useState(null);
@@ -114,3 +113,5 @@ export default function Project() {
     }
     else return <></>;
 }
+
+export default Project;

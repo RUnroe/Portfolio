@@ -1,38 +1,8 @@
-import React, { useEffect, useState } from "react";
-// import projectData from '../projects.json';
+import React from "react";
 import siteData from "../siteData";
 import CollapsedProject from "../components/CollapsedProject";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
-function ProjectList() {
-    const [projectsJSX, setProjectsJSX] = useState([]);
-
-
-    useEffect(() => {
-        getProjectsJSX();
-    }, []);
-
-    useEffect(() => {
-        AOS.init({
-            offset: 80,
-            duration: 350,
-            easing: 'ease-in-sine',
-            });
-        AOS.refresh();
-    }, [projectsJSX]);
-
-    const getProjectsJSX = () => {
-        const tempArray = [];
-
-        //loop over project data and create project partials
-        siteData.projects.forEach(project => {
-            tempArray.push(<CollapsedProject title={project.title} projectType={project.projectType} coverImage={project.coverImage} primaryLanguage={project.primaryLanguage} languageColor={project.languageColor} />)
-        });
-
-        setProjectsJSX(tempArray);
-    }
-
+const ProjectList = () => {
     return(
         <>
         <div className="section">
@@ -41,7 +11,11 @@ function ProjectList() {
                 <p>All projects can be found on <a href="https://github.com/RUnroe/" target="_blank" rel="noreferrer" aria-label="View Ryan's Github">GitHub</a>.</p>
             </div>
             <div id="projectContainer" className="container">
-                {projectsJSX}
+                { 
+                    siteData.projects.map(project => (
+                        <CollapsedProject title={project.title} projectType={project.projectType} coverImage={project.coverImage} primaryLanguage={project.primaryLanguage} languageColor={project.languageColor} />
+                        ))
+                }
             </div>   
         </div>        
         </>

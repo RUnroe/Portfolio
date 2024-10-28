@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
-function NavigationMenu({onHomePage}) {
+
+
+const NavigationMenu = ({onHomePage}) => {
     const [pageTopOffset, setPageTopOffset] = useState(0);
 
     const handleScroll = () => {
