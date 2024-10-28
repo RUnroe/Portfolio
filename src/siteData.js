@@ -3,24 +3,34 @@ const siteData = {
     home: {
 
         knownTechIcons: [
-            "fab fa-html5",
-            "fab fa-css3",
-            "fab fa-js-square",
-            "fab fa-node-js",
-            "fab fa-react",
-            "fab fa-angular",
-            "devicon-spring-plain",
-            "fab fa-git-alt",
-            "devicon-csharp-plain",
-            "fab fa-java",
-            "devicon-php-plain",
-            "fab fa-python",
-            "devicon-nginx-original",
-            "devicon-raspberrypi-line",
-            "fab fa-linux",
-            "devicon-mongodb-plain",
-            "devicon-illustrator-plain",
-            "devicon-figma-plain",
+            {iconClass: "fab fa-react", iconName: "React"},
+            {iconClass: "fab fa-node-js", iconName: "Node JS"},
+            {iconClass: "devicon-spring-plain", iconName: "Spring Boot"},
+            
+            {iconClass: "fab fa-html5", iconName: "HTML"},
+            {iconClass: "fab fa-css3", iconName: "CSS"},
+            {iconClass: "fab fa-js-square", iconName: "JavaScript"},
+
+            {iconClass: "fab fa-git-alt", iconName: "Git"},
+            {iconClass: "devicon-figma-plain", iconName: "Figma"},
+            {iconClass: "devicon-illustrator-plain", iconName: "Adobe Illustrator"},
+
+            {iconClass: "fab fa-java", iconName: "Java"},
+            {iconClass: "devicon-nginx-original", iconName: "Nginx"},
+            {iconClass: "fab fa-linux", iconName: "Linux"},
+            
+           
+            {iconClass: "fab fa-angular", iconName: "Angular"},
+            {iconClass: "devicon-raspberrypi-line", iconName: "Raspberry Pi"},
+            {iconClass: "devicon-mongodb-plain", iconName: "Mongo DB"},
+            
+            {iconClass: "devicon-csharp-plain", iconName: "C#"},
+            {iconClass: "devicon-php-plain", iconName: "PHP"},
+            {iconClass: "fab fa-python", iconName: "Python"},
+            
+            
+            
+           
         ]
     },
     socials: [

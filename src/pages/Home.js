@@ -15,7 +15,7 @@ const Home = () => {
             <div className="container">
                 <div>
                     <h1>Ryan Unroe</h1>
-                    <h2 className="uppercase">Web Design and Development</h2>
+                    <h2 className="uppercase">Web Designer and Developer</h2>
                 </div>
                
                 <SocialRow />
@@ -74,17 +74,17 @@ const Home = () => {
                             In 2022, I graduated from Neumont College of Computer Science as Valedictorian.
                             </p>
                         <p>
-                            In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our <Link to="/projects/bifrost">Bifrost project</Link>. This project won the Overall Audience Favorite award.
+                            In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our <Link to="/projects/bifrost">Bifrost project</Link>. This project won the <em>Overall Audience Favorite</em> award.
                         </p>
                         <p>
                             While developing my coding skills, I had a few opportunities to participate in competitions. 
-                            In 2017, I represented my high school in the Spark App League (24 hour) Game Jam, where I won the Best Overall Game award. 
+                            In 2017, I represented my high school in the Spark App League (24 hour) Game Jam, where I won the <em>Best Overall Game</em> award. 
                         </p>
                     </div>
                     <div className="right">
                         <div className="icons-container">
                             {siteData.home.knownTechIcons.map(icon => (
-                                <TechnologyIcon iconClass={icon} key={icon} />
+                                <TechnologyIcon icon={icon} key={icon} />
                             ))}
                         </div>
                     </div>
