@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
+import SocialRow from "../components/socials/SocialRow";
 
 function Home() {
     useEffect(() => {
@@ -20,7 +22,7 @@ function Home() {
                     <h1>Ryan Unroe</h1>
                     <h2 className="uppercase">Web Design and Development</h2>
                 </div>
-                <div className="socials-container">
+                {/* <div className="socials-container">
                     <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200">
                     <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" rel="noreferrer" aria-label="Navigate to Ryan's LinkedIn">
                         <i className="fab fa-linkedin-in"></i>
@@ -36,11 +38,17 @@ function Home() {
                         <i className="fas fa-envelope"></i>
                     </a>
                     </div>
-                </div>
+                </div> */}
+                <SocialRow />
 
                 <div className="hexagon">
                     <div className="hexagon-in1">
-                        <div className="hex-image" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300"></div>
+                        {/* <div className="hex-image" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300"></div> */}
+                        <motion.div className="hex-image" 
+                            initial={{opacity: 0, scale: 0.5}}
+                            animate={{opacity: 1, scale: 1}}
+                            transition={{delay: 0.3, duration: 0.3}}
+                        />
                     </div>
                 </div>
             </div>
@@ -54,7 +62,7 @@ function Home() {
                         I am currently working for the State of Utah developing and designing webpages in React. 
                         In September of 2022, I graduated from <a href="https://www.neumont.edu/" target="_blank" rel="noreferrer" aria-label="View Ryan's alma mater">Neumont College of Computer Science</a> as Valedictorian with a degree in Web Design and Development. <br />
                         Growing up, I had a lot of interest in engineering. Throughout high school, I participated 
-                        in my schools <a href="https://www.pltw.org/our-programs/pltw-engineering" target="_blank" rel="noreferrer" aria-label="View PLTW Enginerring"> PLTW engineering</a> courses. These courses helped expose me to the different 
+                        in my schools <a href="https://www.pltw.org/our-programs/pltw-engineering" target="_blank" rel="noreferrer" aria-label="View PLTW Engineering"> PLTW engineering</a> courses. These courses helped expose me to the different 
                         types of engineering and eventually introduced me to computer science, which I took quite a
                         liking to. I took additional coding courses through the rest of high school and then moved
                         to Salt Lake City, UT to attend Neumont College. Here, I found that web is my passion, 

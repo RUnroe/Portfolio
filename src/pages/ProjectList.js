@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import projectData from '../projects.json';
-import CollapsedProject from "../partials/CollapsedProject";
+import CollapsedProject from "../components/CollapsedProject";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
