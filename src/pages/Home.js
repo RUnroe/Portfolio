@@ -37,7 +37,7 @@ const Home = () => {
                 <div className="container">
                     <h3>About Me</h3>
                     <p>
-                        I am currently working for the State of Utah developing and designing webpages in React. 
+                        I am currently working for the State of Utah designing, developing, and maintaining, food safety websites in React and Java Spring. 
                         In September of 2022, I graduated from <a href="https://www.neumont.edu/" target="_blank" rel="noreferrer" aria-label="View Ryan's alma mater">Neumont College of Computer Science</a> as Valedictorian with a degree in Web Design and Development. <br />
                         Growing up, I had a lot of interest in engineering. Throughout high school, I participated 
                         in my schools <a href="https://www.pltw.org/our-programs/pltw-engineering" target="_blank" rel="noreferrer" aria-label="View PLTW Engineering"> PLTW engineering</a> courses. These courses helped expose me to the different 
@@ -74,7 +74,7 @@ const Home = () => {
                             In 2022, I graduated from Neumont College of Computer Science as Valedictorian.
                             </p>
                         <p>
-                            In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our <Link to="/projects/bifrost">Bifrost project</Link>. This project ended up winning the Overall Audience Favorite award.
+                            In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our <Link to="/projects/bifrost">Bifrost project</Link>. This project won the Overall Audience Favorite award.
                         </p>
                         <p>
                             While developing my coding skills, I had a few opportunities to participate in competitions. 

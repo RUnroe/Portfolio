@@ -10,7 +10,7 @@ const CollapsedProject = ({title, projectType, coverImage, primaryLanguage, lang
 
     return (
         <Link to={"/projects/" + formatTitle()} className="collapsed-project" >
-            <motion.div initial={{opacity: 0, y: "50%"}} whileInView={{opacity: 1, y: 0}} viewport={{once: true, margin: "0% 0% -25% 0%"}}>
+            <motion.div initial={{opacity: 0, y: "50%"}} whileInView={{opacity: 1, y: 0}} viewport={{once: true}}>
                 <div className="image-container">
                     <img src={`images/${formatTitle()}/${coverImage}`} alt={formatTitle()}/>
                     <span className="language-tag" style={{backgroundColor:languageColor[0], color:languageColor[1]}}>{primaryLanguage}</span>

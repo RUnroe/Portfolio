@@ -1,3 +1,3 @@
 # My Portfolio Website
 
-Built in React with AOS
+Built in React with Framer Motion
