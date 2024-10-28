@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import projectData from '../projects.json';
+// import projectData from '../projects.json';
+import siteData from "../siteData";
 import CollapsedProject from "../components/CollapsedProject";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,7 +26,7 @@ function ProjectList() {
         const tempArray = [];
 
         //loop over project data and create project partials
-        projectData.forEach(project => {
+        siteData.projects.forEach(project => {
             tempArray.push(<CollapsedProject title={project.title} projectType={project.projectType} coverImage={project.coverImage} primaryLanguage={project.primaryLanguage} languageColor={project.languageColor} />)
         });
 

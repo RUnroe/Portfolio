@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { useParams, Navigate, Link } from 'react-router-dom';
 import ImageViewer from 'react-simple-image-viewer';
-const data = require('../projects.json');
+// const data = require('../projects.json');
+import siteData from "../siteData";
 
 
 export default function Project() {
@@ -56,7 +57,7 @@ export default function Project() {
     
     const generateProjects = useCallback(() => {
         let foundProject = false;
-        data.forEach(proj => {
+        siteData.projects.forEach(proj => {
             if(formatTitle(proj.title) === projectName) {
                 console.log(proj);
                 setProject(proj);
