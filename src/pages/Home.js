@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import SocialRow from "../components/socials/SocialRow";
+import siteData from "../siteData";
+import TechnologyIcon from "../components/TechnologyIcon";
 
 function Home() {
     useEffect(() => {
@@ -11,9 +13,12 @@ function Home() {
             offset: 120,
             duration: 300,
             easing: 'ease-in-sine',
-          });
+            });
         AOS.refresh();
-      }, []);
+    }, []);
+
+
+
     return(
         <>
         <div className="section gradient hero">
@@ -22,28 +27,11 @@ function Home() {
                     <h1>Ryan Unroe</h1>
                     <h2 className="uppercase">Web Design and Development</h2>
                 </div>
-                {/* <div className="socials-container">
-                    <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200">
-                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" rel="noreferrer" aria-label="Navigate to Ryan's LinkedIn">
-                        <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    </div>
-                    <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50">
-                    <a className="social-icon github" href="https://github.com/RUnroe/" target="_blank" rel="noreferrer" aria-label="Navigate to Ryan's Github">
-                        <i className="fab fa-github"></i>
-                    </a>
-                    </div>
-                    <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="100">
-                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" rel="noreferrer" aria-label="Send me an email">
-                        <i className="fas fa-envelope"></i>
-                    </a>
-                    </div>
-                </div> */}
+               
                 <SocialRow />
 
                 <div className="hexagon">
                     <div className="hexagon-in1">
-                        {/* <div className="hex-image" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300"></div> */}
                         <motion.div className="hex-image" 
                             initial={{opacity: 0, scale: 0.5}}
                             animate={{opacity: 1, scale: 1}}
@@ -105,29 +93,9 @@ function Home() {
                     </div>
                     <div className="right">
                         <div className="icons-container">
-                            <i className="fab fa-html5" data-aos="fade-up"></i>
-                            <i className="fab fa-css3" data-aos="fade-up"></i>
-                            <i className="fab fa-js-square" data-aos="fade-up"></i>
-
-                            <i className="fab fa-node-js" data-aos="fade-up"></i>
-                            <i className="fab fa-react" data-aos="fade-up"></i>
-                            <i className="fab fa-angular" data-aos="fade-up"></i>
-
-                            <i className="devicon-spring-plain" data-aos="fade-up"></i>
-                            <i className="fab fa-git-alt" data-aos="fade-up"></i>
-                            <i className="devicon-csharp-plain" data-aos="fade-up"></i>
-
-                            <i className="fab fa-java" data-aos="fade-up"></i>
-                            <i className="devicon-php-plain" data-aos="fade-up"></i>
-                            <i className="fab fa-python" data-aos="fade-up"></i>
-
-                            <i className="devicon-nginx-original" data-aos="fade-up"></i>
-                            <i className="devicon-raspberrypi-line" data-aos="fade-up"></i>
-                            <i className="fab fa-linux" data-aos="fade-up"></i>
-
-                            <i className="devicon-mongodb-plain" data-aos="fade-up"></i>
-                            <i className="devicon-illustrator-plain" data-aos="fade-up"></i>
-                            <i className="devicon-figma-plain" data-aos="fade-up"></i>
+                            {siteData.home.knownTechIcons.map(icon => (
+                                <TechnologyIcon iconClass={icon} key={icon} />
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -141,17 +109,17 @@ function Home() {
                         Feel free to reach out to me via email or LinkedIn! 
                     </p>
                     <div className="socials-container">
-                    <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-offset="30">
-                    <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" rel="noreferrer" aria-label="Reach out to me via email">
-                        <i className="fas fa-envelope"></i>
-                    </a>
+                        <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-offset="30">
+                            <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" rel="noreferrer" aria-label="Reach out to me via email">
+                                <i className="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50" data-aos-offset="30">
+                            <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" rel="noreferrer" aria-label="Reach out to me via LinkedIn">
+                                <i className="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="50" data-aos-offset="30">
-                    <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" rel="noreferrer" aria-label="Reach out to me via LinkedIn">
-                        <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    </div>
-                </div>
                 </div>
 
             </div>

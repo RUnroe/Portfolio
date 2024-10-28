@@ -22,26 +22,8 @@ const SocialRow = () => {
     
     } 
 
-    /*
-
-        <div className="social-icon-wrapper" >
-            <a className="social-icon linkedin" href="https://www.linkedin.com/in/ryanunroe/" target="_blank" rel="noreferrer" aria-label="Navigate to Ryan's LinkedIn">
-                <i className="fab fa-linkedin-in"></i>
-            </a>
-        </div>
-        <div className="social-icon-wrapper" >
-            <a className="social-icon github" href="https://github.com/RUnroe/" target="_blank" rel="noreferrer" aria-label="Navigate to Ryan's Github">
-                <i className="fab fa-github"></i>
-            </a>
-        </div>
-        <div className="social-icon-wrapper" >
-            <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" rel="noreferrer" aria-label="Send Ryan an email">
-                <i className="fas fa-envelope"></i>
-            </a>
-        </div>
-
-    */
-
+    
+    // TODO: Move to site-data file later
     const socials = [
       {
         title: "Linkedin", //Use this with title to make image alt e.g. (Linkedin - ryanunroe)
