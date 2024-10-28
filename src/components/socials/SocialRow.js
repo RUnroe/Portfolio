@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SocialIcon from "./SocialIcon";
+import siteData from "../../siteData";
 
-const SocialRow = () => {
+const SocialRow = ({contactTagsOnly = false}) => {
     const variants = {
         initial: {
           opacity: 0,
@@ -23,36 +24,12 @@ const SocialRow = () => {
     } 
 
     
-    // TODO: Move to site-data file later
-    const socials = [
-      {
-        title: "Linkedin", //Use this with title to make image alt e.g. (Linkedin - ryanunroe)
-        username: "ryanunroe",
-        iconComponent: <i className="fab fa-linkedin-in"></i>,
-        url: "https://www.linkedin.com/in/ryanunroe/",
-        ariaLabel: "Navigate to Ryan's LinkedIn",
-      },
-      {
-        title: "GitHub", 
-        username: "RUnroe",
-        iconComponent: <i className="fab fa-github"></i>,
-        url: "https://www.linkedin.com/in/ryanunroe/",
-        ariaLabel: "Navigate to Ryan's Github",
-      },
-      {
-        title: "Gmail", 
-        username: "ryanunroe@gmail.com",
-        iconComponent: <i className="fas fa-envelope"></i>,
-        url: "mailto:ryanunroe@gmail.com",
-        ariaLabel: "Send Ryan an email",
-      },
-    ]
-
+ 
     return ( 
         <div>
     
-          <motion.div className="social-row socials-container" variants={variants} animate="animate" initial="initial">
-            {socials.map((socialInfo, index) => (
+          <motion.div className="social-row socials-container" variants={variants} whileInView={"animate"} initial="initial">
+            {siteData.socials.filter(socialInfo => contactTagsOnly ? socialInfo.isContactSocial : true).map((socialInfo, index) => (
                 <SocialIcon 
                   title={`${socialInfo.title} - ${socialInfo.username}`}
                   url={socialInfo.url}

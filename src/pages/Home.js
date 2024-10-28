@@ -108,7 +108,8 @@ function Home() {
                     <p>
                         Feel free to reach out to me via email or LinkedIn! 
                     </p>
-                    <div className="socials-container">
+                    <SocialRow contactTagsOnly/>
+                    {/* <div className="socials-container">
                         <div className="social-icon-wrapper" data-aos="zoom-in" data-aos-duration="200" data-aos-offset="30">
                             <a className="social-icon gmail" href="mailto:ryanunroe@gmail.com" target="_blank" rel="noreferrer" aria-label="Reach out to me via email">
                                 <i className="fas fa-envelope"></i>
@@ -119,7 +120,7 @@ function Home() {
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

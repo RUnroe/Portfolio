@@ -1,4 +1,4 @@
-export default {
+const siteData = {
 
     home: {
 
@@ -23,11 +23,36 @@ export default {
             "devicon-figma-plain",
         ]
     },
-    social: {
-
-    },
+    socials: [
+        {
+            title: "Linkedin", //Use this with title to make image alt e.g. (Linkedin - ryanunroe)
+            username: "ryanunroe",
+            iconComponent: <i className="fab fa-linkedin-in"></i>,
+            url: "https://www.linkedin.com/in/ryanunroe/",
+            ariaLabel: "Navigate to Ryan's LinkedIn",
+            isContactSocial: true,
+        },
+        {
+            title: "GitHub", 
+            username: "RUnroe",
+            iconComponent: <i className="fab fa-github"></i>,
+            url: "https://www.linkedin.com/in/ryanunroe/",
+            ariaLabel: "Navigate to Ryan's Github",
+            isContactSocial: false,
+        },
+        {
+            title: "Gmail", 
+            username: "ryanunroe@gmail.com",
+            iconComponent: <i className="fas fa-envelope"></i>,
+            url: "mailto:ryanunroe@gmail.com",
+            ariaLabel: "Send Ryan an email",
+            isContactSocial: true,
+        },
+    ],
     projects: {
 
     },
 
 }
+
+export default siteData;
