@@ -1,0 +1,75 @@
+
+/**************************
+        Border Radius
+**************************/
+
+$border-radius-button: 32px;
+$border-radius-card: 167px;
+
+
+/**************************
+        Colors
+**************************/
+
+$dark-500: #222222;
+$dark-300: #2E2E2E;
+$dark-100: #625F5F;
+
+//Odd hundreds for dark mode
+//Even for light
+$red-900: #5C3E3E;
+$red-800: #6D1F1F;
+$red-700: #772222;
+$red-600: #9C0C0C;
+$red-500: #B11D1D;
+$red-400: #E00808;
+$red-100: #FF6D6D;
+
+$light-700: #B9B9B9;
+$light-600: #CACACA;
+$light-200: #FFFAFA;
+$light-100: #FFFFFF;
+
+
+:root {
+    --color-bg-primary: #{$light-200};
+    --color-bg-secondary: #{$light-100};
+
+    --color-primary-dark: #{$red-800};
+    --color-primary-medium: #{$red-600};
+    --color-primary-light: #{$red-400};
+
+    --color-text-title: #{$dark-500};
+    --color-text-body: #{$dark-100};
+    --color-text-card-title: #{$light-100};
+    --color-text-card-subtext: #{$light-600};
+    --color-text-link: #{$red-600};
+
+    --color-btn-primary-background: #{$red-400};
+    --color-btn-primary-bg-hover: #{$red-100};
+    --color-btn-primary-text: #{$light-100};
+    --color-btn-outline: #{$red-400};
+}
+
+@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+    :root {
+        --color-bg-primary: #{$dark-500};
+        --color-bg-secondary: #{$dark-300};
+
+        --color-primary-dark: #{$red-900};
+        --color-primary-medium: #{$red-700};
+        --color-primary-light: #{$red-500};
+
+        --color-text-title: #{$light-100};
+        --color-text-body: #{$light-600};
+        --color-text-card-title: #{$light-100};
+        --color-text-card-subtext: #{$light-600};
+        --color-text-link: #{$red-100};
+
+        --color-btn-primary-background: #{$red-500};
+        --color-btn-primary-bg-hover: #{$red-100};
+        --color-btn-primary-text: #{$light-100};
+        --color-btn-outline: #{$light-200};
+    }
+}
+

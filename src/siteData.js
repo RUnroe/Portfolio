@@ -118,7 +118,7 @@ const siteData = {
     
         {
             "title": "RasPi Getting Started",
-            "projectType": "A Raspberry Pi Setup and Tutorial guide",
+            "projectType": "A Raspberry Pi Setup Guide",
             "description": "<h4>What is it?</h4><p>This single page application is a guide to help people get started with a Raspberry Pi. It contains multiple sections and graphics to help users follow along. This guide takes users through an introduction and shows how to set up their own Raspberry Pi. This guide also proposes potential next steps for the users to take if they wish.</p><h4>The Technical Side</h4><p>This Raspberry Pi Getting Started guide was created as a SPA (single page application) in Angular. The pages were styled with custom SCSS and all of the images were taken/created and edited by me. </p><h4>What I Learned</h4><p>Throughout this project, I learned how to make a simple Angular application. With this, I learned how to load different content into a SPA. I also learned how to code in TypeScript.</p><p>I also took this opportunity to reinforce and gain more knowledge about Raspberry Pis. </p>",
             "images": ["app-2.png", "sections.png"],
             "imageLayout": "layout2b",

@@ -15,8 +15,11 @@ const CollapsedProject = ({title, projectType, coverImage, primaryLanguage, lang
                     <img src={`images/${formatTitle()}/${coverImage}`} alt={formatTitle()}/>
                     <span className="language-tag" style={{backgroundColor:languageColor[0], color:languageColor[1]}}>{primaryLanguage}</span>
                 </div>
-                <h4>{title}</h4>
-                <p>{projectType}</p>
+                <div className="text-overlay">
+                    <h4>{title}</h4>
+                    <p>{projectType}</p>
+                </div>
+                
             </motion.div>
         </Link>
     );
