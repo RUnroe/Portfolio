@@ -190,10 +190,11 @@ nav {
     border-radius: 6px;
     text-decoration: none;
     margin:1rem;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease, border-radius 0.2s ease;
     background-color: var(--color-btn-primary-background);
     color: var(--color-btn-primary-text);
     font-weight: 500;
+
 
     &.primary {
         color: var(--color-btn-primary-text);
@@ -201,6 +202,7 @@ nav {
     
         &:hover {
             background-color: var(--color-btn-primary-bg-hover);
+            border-radius: 0;
         }
     }
 
@@ -215,6 +217,7 @@ nav {
         &:hover {
             background-color: var(--color-btn-outline);
             color: var(--color-bg-secondary);
+            border-radius: 0;
         }
     }
 
@@ -229,7 +232,7 @@ nav {
     Collapsed Project
 **************************/
 .collapsed-project {
-    transition:transform 0.3s ease; 
+    transition: transform 0.3s ease; 
     color: var(--color-primary-medium);
     text-decoration: none;
     
@@ -237,6 +240,9 @@ nav {
     & > div {
         min-width: 500px;
         max-width: 500px;
+
+        height: 275px;
+
         // padding:1.5rem;
         display:flex;
         flex-direction: column;
@@ -247,12 +253,16 @@ nav {
         position: relative;
         box-sizing: border-box;
         background-color: var(--color-primary-medium);
+        transition: border-radius 0.3s ease; 
         
     
     }
 
     &:hover {
-        transform: scale(1.01);
+        transform: scale(1.015);
+        & > div {
+            border-radius: 0;
+        }
     }
 
     .text-overlay {
