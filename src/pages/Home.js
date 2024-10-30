@@ -7,7 +7,8 @@ import TechnologyIcon from "../components/TechnologyIcon";
 
 const Home = () => {
    
-
+    //TODO: Shader gradient
+    //https://github.com/ruucm/shadergradient?tab=readme-ov-file#installation
 
     return(
         <>
