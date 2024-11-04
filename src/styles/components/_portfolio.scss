@@ -11,6 +11,17 @@ html, body {
 
     font-family: "Roboto Slab", sans-serif;
     font-optical-sizing: auto;
+
+    /*change color of text highlight*/
+    ::-moz-selection {
+        color: #ebf8f1;
+        background: #E00808;
+    }
+  
+    ::selection {
+        color: #ebf8f1;
+        background: #E00808;
+    }
 }
 
 html {
@@ -30,6 +41,8 @@ body,
 
 
 
+
+
 .container {
     max-width:1200px;
     margin:0 auto;
@@ -41,14 +54,16 @@ body,
 }
 .section {
     padding:1rem;
+    z-index: 5;
+    position: relative;
 }
 .light-2 {
     background-color: var(--color-light-2);
 }
 
-.section.gradient {
-    background: var(--gradient-dark);
-}
+// .section.gradient {
+//     background: var(--gradient-dark);
+// }
 
 #main {
     margin-top:4rem;
@@ -318,6 +333,20 @@ nav {
     }
 }
 
+
+
+/**************************
+    Collapsed Project
+**************************/
+
+.gradient-screen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
 
 
 

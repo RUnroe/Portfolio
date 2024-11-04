@@ -10,6 +10,9 @@ import {
   Navigate,
 } from "react-router-dom";
 import {useEffect, useState} from 'react';
+import ShaderGradientBG from './components/ShaderGradientBG';
+
+
 
 function App() {
   const [onHomePage, setOnHomePage] = useState(true);
@@ -34,12 +37,16 @@ function RoutesModule({setOnHomePage}) {
     }, [location, setOnHomePage]);
   
   return (
+    <div>
     <Routes>
-    <Route exact path="/" element={<Home/>} />
-    <Route exact path="/projects" element={<ProjectList />} />
-    <Route exact path="/projects/:projectName" element={<Project />} />
-    <Route path="/" element={<Navigate to={{pathname: '/'}} />} />
-  </Routes>
+      <Route exact path="/" element={<Home/>} />
+      <Route exact path="/projects" element={<ProjectList />} />
+      <Route exact path="/projects/:projectName" element={<Project />} />
+      <Route path="/" element={<Navigate to={{pathname: '/'}} />} />
+    </Routes>
+    <ShaderGradientBG />
+    </div>
+    
   )
 }
 

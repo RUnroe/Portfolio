@@ -90,6 +90,7 @@
     margin: 0;
 
     position: relative;
+    z-index: 4;
 
     .role-text {
         font-family: "Almarai", sans-serif;
@@ -104,14 +105,15 @@
 
         opacity: 0.8;
         font-weight: 800;
-        color: var(--color-bg-primary);
+        color: transparent;
         font-size: 15.5vw; //D E V E L O P E R = 9 characters. 100 vw / 9 chars == 11.11
         text-align: left;
-        text-shadow:
-        -1px -1px 0 var(--color-btn-outline),
-        1px -1px 0 var(--color-btn-outline),
-        -1px 1px 0 var(--color-btn-outline),
-        1px 1px 0 var(--color-btn-outline);  
+        // text-shadow:
+        // -1px -1px 0 var(--color-btn-outline),
+        // 1px -1px 0 var(--color-btn-outline),
+        // -1px 1px 0 var(--color-btn-outline),
+        // 1px 1px 0 var(--color-btn-outline);  
+        -webkit-text-stroke: 2px var(--color-btn-outline);
 
        
     }
