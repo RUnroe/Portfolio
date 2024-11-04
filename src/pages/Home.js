@@ -37,7 +37,7 @@ const Home = () => {
         </div>
         <div className="light-2 home-content">
             <div className="section about-me">
-                <div className="container">
+                <div className="about-me-container">
                     <h3>About Me</h3>
                     <p>
                         I am currently working for the State of Utah designing, developing, and maintaining, food safety websites in React and Java Spring. 
