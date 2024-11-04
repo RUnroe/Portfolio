@@ -82,6 +82,41 @@
     background-position: center;
     background-size: contain;
 }
+
+
+.role-section {
+    width: 100%;
+    height: calc(15.5vw * 2.5);
+    margin: 0;
+
+    position: relative;
+
+    .role-text {
+        font-family: "Almarai", sans-serif;
+        width: 100%;
+
+        position: absolute;
+        top: -5rem;
+
+        opacity: 0.8;
+        font-weight: 800;
+        color: var(--color-bg-primary);
+        font-size: 15.5vw; //D E V E L O P E R = 9 characters. 100 vw / 9 chars == 11.11
+        text-align: left;
+        text-shadow:
+        -1px -1px 0 var(--color-btn-outline),
+        1px -1px 0 var(--color-btn-outline),
+        -1px 1px 0 var(--color-btn-outline),
+        1px 1px 0 var(--color-btn-outline);  
+
+        &:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}
+
 /**************************
         Home Content
 **************************/

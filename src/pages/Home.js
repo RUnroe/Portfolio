@@ -16,7 +16,6 @@ const Home = () => {
             <div className="container">
                 <div>
                     <h1>Ryan Unroe</h1>
-                    <h2 className="uppercase">Web Designer and Developer</h2>
                 </div>
                
                 <SocialRow />
@@ -32,6 +31,9 @@ const Home = () => {
                 </div>
             </div>
 
+        </div>
+        <div className="role-section">
+            <h2 className="role-text">Developer<br/>Designer</h2>
         </div>
         <div className="light-2 home-content">
             <div className="section about-me">

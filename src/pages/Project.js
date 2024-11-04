@@ -92,7 +92,17 @@ const Project = () => {
                     <div className="image-section">
                         {imagesJSX}
                     </div>
-                    <div className="description-section" dangerouslySetInnerHTML={{__html: project.description}}>
+                    <div className="description-section what">
+                        <h4>What is it?</h4>
+                        <p dangerouslySetInnerHTML={{__html: project.description.what}}/>
+                    </div>
+                    <div className="description-section technical">
+                        <h4>The Technical Side</h4>
+                        <p dangerouslySetInnerHTML={{__html: project.description.technical}}/>
+                    </div>
+                    <div className="description-section takeaways">
+                        <h4>What I Learned</h4>
+                        <p dangerouslySetInnerHTML={{__html: project.description.takeaways}}/>
                     </div>
                 </div>
             </div>
