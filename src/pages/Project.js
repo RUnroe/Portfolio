@@ -76,34 +76,42 @@ const Project = () => {
         return (
             <>
             <div className="section project">
-                <div className="container card">
-                    <div className="header">
-                        <h3>{project.title}</h3>
-                        <h4>{project.projectType}</h4>
-                        <hr />
+                <div className="container">
+                    <header>
+                        <div className="header">
+                            <h3>{project.title}</h3>
+                            <h4>{project.projectType}</h4>
+                            <hr />
 
-                        <Link to="/projects" className="back"><i className="fas fa-chevron-left"></i> Back</Link>
+                            <Link to="/projects" className="back"><i className="fas fa-chevron-left"></i> Back</Link>
+                        </div>
+                        <div className="button-group">
+                            {project.githubLink && <a href={project.githubLink} target="_blank" rel="noreferrer" className="btn secondary" aria-label="View this project on Github">View on GitHub</a>}
+                            {project.liveSiteLink && <a href={project.liveSiteLink} target="_blank" rel="noreferrer"  className="btn primary" aria-label="View this project">View Live Site</a>}
+                        </div>
+                    </header>
+                    <div className="project-content">
+                        
+                        <div>
+                            <div className="description-section what">
+                                <h4>What is it?</h4>
+                                <p dangerouslySetInnerHTML={{__html: project.description.what}}/>
+                            </div>
+                            
+                            <div className="description-section technical">
+                                <h4>The Technical Side</h4>
+                                <p dangerouslySetInnerHTML={{__html: project.description.technical}}/>
+                            </div>
+                            <div className="description-section takeaways">
+                                <h4>What I Learned</h4>
+                                <p dangerouslySetInnerHTML={{__html: project.description.takeaways}}/>
+                            </div>
+                        </div>
+                        <div className="image-section">
+                            {imagesJSX}
+                        </div>
                     </div>
-                    <div className="button-group">
-                        {project.githubLink && <a href={project.githubLink} target="_blank" rel="noreferrer" className="btn secondary" aria-label="View this project on Github">View on GitHub</a>}
-                        {project.liveSiteLink && <a href={project.liveSiteLink} target="_blank" rel="noreferrer"  className="btn primary" aria-label="View this project">View Live Site</a>}
-                    </div>
-
-                    <div className="image-section">
-                        {imagesJSX}
-                    </div>
-                    <div className="description-section what">
-                        <h4>What is it?</h4>
-                        <p dangerouslySetInnerHTML={{__html: project.description.what}}/>
-                    </div>
-                    <div className="description-section technical">
-                        <h4>The Technical Side</h4>
-                        <p dangerouslySetInnerHTML={{__html: project.description.technical}}/>
-                    </div>
-                    <div className="description-section takeaways">
-                        <h4>What I Learned</h4>
-                        <p dangerouslySetInnerHTML={{__html: project.description.takeaways}}/>
-                    </div>
+                    
                 </div>
             </div>
             {isViewerOpen && (
