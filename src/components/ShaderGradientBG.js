@@ -17,6 +17,7 @@ const ShaderGradientBG = () => {
                 left: 0,
                 right: 0,
                 zIndex: 0,
+                opacity: 0.4
             }}
            
 
