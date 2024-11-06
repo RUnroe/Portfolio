@@ -1,4 +1,3 @@
-@use '../util/variables';
 
 
 #projectContainer {
@@ -192,10 +191,10 @@
         &.layout3a {
             .c0 {
                 border-top-left-radius: 0;
-                border-bottom-left-radius: variables.$border-radius-card;
+                border-bottom-left-radius: var(--border-radius-card);
             }
             .c1 {
-                border-top-right-radius: variables.$border-radius-card;
+                border-top-right-radius: var(--border-radius-card);
             }
             .c2 {
                 border-bottom-right-radius: 0;
@@ -204,10 +203,10 @@
 
         &.layout2a .c0, &.layout2b .c0 {
             border-top-left-radius: 0;
-            border-bottom-left-radius: variables.$border-radius-card;
+            border-bottom-left-radius: var(--border-radius-card);
         }
         &.layout2a .c1, &.layout2b .c1 {
-            border-top-right-radius: variables.$border-radius-card;
+            border-top-right-radius: var(--border-radius-card);
             border-bottom-right-radius: 0;
         }
     }
@@ -238,11 +237,11 @@
             .c0 {
                 grid-column: 1 / 3;
                 border-top-left-radius: 0;
-                border-top-right-radius: variables.$border-radius-card;
+                border-top-right-radius: var(--border-radius-card);
             }
 
             .c1 {
-                border-bottom-left-radius: variables.$border-radius-card;
+                border-bottom-left-radius: var(--border-radius-card);
                 min-width:100px;
                 min-height:100px;
             }

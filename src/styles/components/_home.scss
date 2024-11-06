@@ -1,4 +1,3 @@
-@use '../util/variables';
 
 /**************************
             Hero
@@ -108,14 +107,7 @@
         color: transparent;
         font-size: 15.5vw; //D E V E L O P E R = 9 characters. 100 vw / 9 chars == 11.11
         text-align: left;
-        // text-shadow:
-        // -1px -1px 0 var(--color-btn-outline),
-        // 1px -1px 0 var(--color-btn-outline),
-        // -1px 1px 0 var(--color-btn-outline),
-        // 1px 1px 0 var(--color-btn-outline);  
         -webkit-text-stroke: 2px var(--color-btn-outline);
-
-       
     }
 }
 
@@ -150,7 +142,7 @@
         width: fit-content;
         padding: 4rem 8rem;
         background: var(--color-bg-secondary);
-        border-radius: 0 variables.$border-radius-card 0 variables.$border-radius-card;
+        border-radius: 0 var(--border-radius-card) 0 var(--border-radius-card);
     }
 }
 
@@ -327,8 +319,25 @@
             margin-bottom: 0.5rem;
         }
     }
+    .role-section {
+        .role-text {
+            -webkit-text-stroke: 1px var(--color-btn-outline);
+        }
+    }
     .about-me {
         margin-bottom:4rem;
+        margin-top: 6rem;
+        padding: 0;
+
+        .about-me-container {
+            width: fit-content;
+            padding: 2rem;
+            background: var(--color-bg-secondary);
+            border-radius: 0 0;
+            h3 {
+                margin-top: 1rem;
+            }
+        }
     }
     
     .skills {

@@ -5,6 +5,11 @@
 
 $border-radius-button: 32px;
 $border-radius-card: 167px;
+$border-radius-small-card: 97px;
+
+@media all and (max-width: 676px) {
+   
+}
 
 
 /**************************
@@ -32,6 +37,9 @@ $light-100: #FFFFFF;
 
 
 :root {
+    --border-radius-button: #{$border-radius-button};
+    --border-radius-card: #{$border-radius-card};
+
     --color-bg-primary: #{$light-200};
     --color-bg-secondary: #{$light-100};
 
@@ -77,3 +85,8 @@ $light-100: #FFFFFF;
     }
 }
 
+@media all and (max-width: 450px) {
+    :root {
+        --border-radius-card: #{$border-radius-small-card};
+    }
+}
