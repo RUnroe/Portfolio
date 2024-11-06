@@ -13,11 +13,22 @@
     h1 {
         margin: 0 0 0.5rem;
         font-weight: 400;
+        font-size: 6rem;
     }
     h2 {
         color:var(--color-text-body);
         font-size: 1.3rem;
         font-weight: 400;
+    }
+
+    .hero-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-image-section {
+        display: flex;
+        align-items: center;
     }
 
 }
@@ -26,13 +37,13 @@
 
 .socials-container {
     margin-top:1.5rem;
+    margin-right:1.5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.social-icon-wrapper {
-    margin-right:1rem;
-}
+
 
 .social-icon {
     border-radius: 100vh 100vh 0 100vh;
@@ -66,30 +77,36 @@
 }
 
 
-.hexagon-in1 {
-    position:absolute;
-    right: 3rem;
-    top:2rem;
-    z-index:100;
+.headshot-container {
+    // position:absolute;
+    // right: 3rem;
+    // top: 0rem;
+    // z-index:100;
     width: fit-content;
+    border-radius: 0 var(--border-radius-card) 0 var(--border-radius-card);
+    overflow: hidden;
+    
 }
 
-.hex-image {
-    background-image: url("../../assets/hexHeadshot.png");
+.headshot-image {
+    // background-image: url("../../assets/headshotFull.jpg");
     width: 400px;
-    height: 400px;
-    background-position: center;
-    background-size: contain;
+    // background-position: center;
+    // background-size: contain;
 }
 
 
 .role-section {
     width: 100%;
-    height: calc(15.5vw * 2);
+    // height: calc(15.5vw * 2);
+    // height: 4vw;
+    // height: 100%;
     margin: 0;
 
     position: relative;
     z-index: 4;
+    top: -13rem;
+    margin-bottom: -16rem;
 
     .role-text {
         font-family: "Almarai", sans-serif;
@@ -97,9 +114,9 @@
         height: fit-content;
         margin:0;
 
-        position: absolute;
-        // top: -15rem;
-        top: 0;
+        // position: absolute;
+        top: -13rem;
+        // top: 0;
         line-height: 1;
 
         opacity: 0.8;
@@ -289,7 +306,7 @@
         height:265px;
     }
     .hero {
-        padding-bottom:13rem;
+        padding-bottom: 0rem;
     }
 
     .about-me {
@@ -307,19 +324,27 @@
             padding-right: 2rem;
             grid-template-columns: auto 64px;
         }
+        .hero-row {
+            display: flex;
+            flex-direction: column;
+        }
+        .hero-image-section {
+            flex-direction: column;
+        }
+    
 
 
         .socials-container {
-            flex-direction: column;
+            flex-direction: row;
             align-items: flex-end;
-            margin-top:0;
+            margin: 1rem 0;
         }
-        .social-icon {
-            margin-right:0;
-            margin-bottom: 0.5rem;
-        }
+
     }
     .role-section {
+        top: -1.5rem;
+        margin-bottom: -3rem;
+
         .role-text {
             -webkit-text-stroke: 1px var(--color-btn-outline);
         }

@@ -14,16 +14,20 @@ const Home = () => {
     return(
         <>
         <div className="section gradient hero">
-            <div className="container">
+            <div className="container hero-row">
                 <div>
-                    <h1>Ryan Unroe</h1>
+                    <h1>
+                        Ryan <br />
+                        Unroe
+                    </h1>
                 </div>
-               
-                <SocialRow />
 
-                <div className="hexagon">
-                    <div className="hexagon-in1">
-                        <motion.div className="hex-image" 
+                <div className="hero-image-section">
+                    <SocialRow />
+
+                    <div className="headshot-container">
+                        <motion.img className="headshot-image" 
+                            src={"images/site/headshotFull.jpg"}
                             initial={{opacity: 0, scale: 0.5}}
                             animate={{opacity: 1, scale: 1}}
                             transition={{delay: 0.3, duration: 0.3}}
