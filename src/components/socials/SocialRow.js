@@ -28,7 +28,7 @@ const SocialRow = ({contactTagsOnly = false}) => {
     return ( 
         <div>
     
-          <motion.div className="social-row socials-container" variants={variants} whileInView={"animate"} initial="initial">
+          <motion.div className={`social-row ${contactTagsOnly ? "socials-contact-container" : "socials-container"}`} variants={variants} whileInView={"animate"} initial="initial">
             {siteData.socials.filter(socialInfo => contactTagsOnly ? socialInfo.isContactSocial : true).map((socialInfo, index) => (
                 <SocialIcon 
                   title={`${socialInfo.title} - ${socialInfo.username}`}

@@ -43,6 +43,15 @@
     gap: 1.5rem;
 }
 
+.socials-contact-container {
+    margin-top:1.5rem;
+    margin-right:1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
 
 
 .social-icon {
@@ -78,10 +87,7 @@
 
 
 .headshot-container {
-    // position:absolute;
-    // right: 3rem;
-    // top: 0rem;
-    // z-index:100;
+   
     width: fit-content;
     border-radius: 0 var(--border-radius-card) 0 var(--border-radius-card);
     overflow: hidden;
@@ -89,10 +95,8 @@
 }
 
 .headshot-image {
-    // background-image: url("../../assets/headshotFull.jpg");
-    width: 400px;
-    // background-position: center;
-    // background-size: contain;
+    width: 100%;
+    max-width: 500px;
 }
 
 
