@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import SocialRow from "../components/socials/SocialRow";
 import siteData from "../siteData";
 import TechnologyIcon from "../components/TechnologyIcon";
+import { AwardIcon } from "../components/Icons";
 
 const Home = () => {
    
@@ -71,7 +72,8 @@ const Home = () => {
                         </p>
                         <div className="award-section-break">
                             <hr />
-                            <img className="award-icon" src="/images/award-icon.png" alt="Award Icon"/>
+                            {/* <img className="award-icon" src="/images/award-icon.png" alt="Award Icon"/> */}
+                            <AwardIcon />
                         </div>
                         <p>
                             In 2022, I graduated from Neumont College of Computer Science as Valedictorian.

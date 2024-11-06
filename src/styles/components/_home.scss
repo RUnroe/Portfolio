@@ -187,6 +187,7 @@
         display:grid;
         grid-template-columns: 4fr 3fr;    
     }
+
 }
 
 
@@ -222,7 +223,13 @@
 }
 
 .award-icon {
-    width:45px;
+    fill: var(--color-text-title);
+   
+    padding: 0.5rem;
+    background-color: var(--color-bg-secondary);
+    border: 2px solid var(--color-text-body);
+    border-radius: 100vh;
+    width: 2rem;
     transform: translate(-50%, -50%);
     position:absolute;
     left:50%;
