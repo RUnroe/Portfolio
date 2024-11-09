@@ -96,7 +96,7 @@ const Home = () => {
                         <Tooltip id="icon-name-tooltip" place="bottom" />
                         <div className="icons-container">
                             {siteData.home.knownTechIcons.map(icon => (
-                                <TechnologyIcon icon={icon} key={icon} />
+                                <TechnologyIcon icon={icon} key={icon.iconName} />
                             ))}
                         </div>
                     </div>
