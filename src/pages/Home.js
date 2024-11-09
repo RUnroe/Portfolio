@@ -5,11 +5,13 @@ import SocialRow from "../components/socials/SocialRow";
 import siteData from "../siteData";
 import TechnologyIcon from "../components/TechnologyIcon";
 import { AwardIcon } from "../components/Icons";
+import { Tooltip } from 'react-tooltip';
 
 const Home = () => {
    
-    //TODO: Shader gradient
-    //https://github.com/ruucm/shadergradient?tab=readme-ov-file#installation
+   
+    
+
 
     return(
         <>
@@ -91,6 +93,7 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="right">
+                        <Tooltip id="icon-name-tooltip" place="bottom" />
                         <div className="icons-container">
                             {siteData.home.knownTechIcons.map(icon => (
                                 <TechnologyIcon icon={icon} key={icon} />

@@ -28,9 +28,9 @@ const SocialIcon = ({title, url, ariaLabel, IconComponent}) => {
         rel="noreferrer" 
         aria-label={ariaLabel}
         variants={variants}
-        whileHover={{
-            scale: 1.05,
-        }}
+        // whileHover={{
+        //     // scale: 1.05,
+        // }}
         >
         {IconComponent}
         </motion.a>
