@@ -6,6 +6,7 @@ import siteData from "../siteData";
 import TechnologyIcon from "../components/TechnologyIcon";
 import { AwardIcon } from "../components/Icons";
 import { Tooltip } from 'react-tooltip';
+import AwardTimeline from "../components/AwardTimeline";
 
 const Home = () => {
    
@@ -44,7 +45,7 @@ const Home = () => {
         </div>
         <div className="light-2 home-content">
             <div className="section about-me">
-                <div className="about-me-container">
+                {/* <div className="about-me-container">
                     <h3>About Me</h3>
                     <p>
                         I am currently working for the State of Utah designing, developing, and maintaining, food safety websites in React and Java Spring. 
@@ -56,7 +57,7 @@ const Home = () => {
                         to Salt Lake City, UT to attend Neumont College. Here, I found that web is my passion, 
                         and that both the development and the design side spark my interest.  
                     </p>
-                </div>
+                </div> */}
             </div>
 
             <div className="skills">
@@ -81,16 +82,31 @@ const Home = () => {
                             {/* <img className="award-icon" src="/images/award-icon.png" alt="Award Icon"/> */}
                             <AwardIcon />
                         </div>
-                        <p>
-                            In 2022, I graduated from Neumont College of Computer Science as Valedictorian.
-                            </p>
-                        <p>
-                            In 2021, my friends and I participated in Neumont's Project Showcase, where we showed off our <Link to="/projects/bifrost">Bifrost project</Link>. This project won the <em>Overall Audience Favorite</em> award.
-                        </p>
-                        <p>
-                            While developing my coding skills, I had a few opportunities to participate in competitions. 
-                            In 2017, I represented my high school in the Spark App League (24 hour) Game Jam, where I won the <em>Best Overall Game</em> award. 
-                        </p>
+                        <AwardTimeline 
+                            awards={[
+                                {
+                                    year: 2022,
+                                    children: `<p>
+                                        Graduated from Neumont College of Computer Science as Valedictorian.
+                                        </p>`
+                                },
+                                {
+                                    year: 2021,
+                                    children: ` <p>
+                                        My friends and I participated in Neumont's Project Showcase, where we showed off our 
+                                        <a href="/projects/bifrost">Bifrost project</a>. This project won the <em>Overall Audience Favorite</em> award.
+                                    </p>`
+                                },
+                                {
+                                    year: 2017,
+                                    children: ` <p>
+                                        While developing my coding skills, I had a few opportunities to participate in competitions. 
+                                        In 2017, I represented my high school in the Spark App League (24 hour) Game Jam, where I won the <em>Best Overall Game</em> award. 
+                                    </p>`
+                                },
+                            ]}
+                        />
+                      
                     </div>
                     <div className="right">
                         <Tooltip id="icon-name-tooltip" place="bottom" />

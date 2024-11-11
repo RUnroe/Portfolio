@@ -199,6 +199,68 @@
         z-index: 75;
         display:grid;
         grid-template-columns: 4fr 3fr;    
+
+        .right {
+            margin: auto 0;
+        }
+    }
+
+
+
+    .award-timeline {
+        position: relative;
+        // padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        &::before {
+            content: '';
+            height: 100%;
+            width: 3px;
+            // background-color: var(--color-primary-dark);
+            background-color: var(--color-bg-primary);
+            display: flex;
+            position: absolute;
+            z-index: 5;
+            left: 12px;
+            transform: translateX(-50%);
+        }
+        .award-item {
+            display: grid;
+            grid-template-columns: 6rem auto;
+            position: relative;
+            z-index: 10;
+            
+
+            .year {
+                display:flex;
+                background-color: var(--color-primary-medium);
+                color: var(--color-text-title);
+                font-weight: 400;
+                padding: 0.25rem;
+                margin-right: 0.75rem;
+                border-radius: 100vw;
+                height: fit-content;
+                align-items: center;
+                position: relative;
+                top: -0.125rem;
+                line-height: 1;
+
+                 &::before {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 0.75rem;
+                    background-color: var(--color-bg-primary);
+                    display: flex;
+                    border-radius: 100vw;
+                }
+            }
+            p {
+                margin: 0;
+            }
+        }
     }
 
 }

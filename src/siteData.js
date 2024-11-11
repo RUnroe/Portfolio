@@ -83,7 +83,7 @@ const siteData = {
             "projectType": "A react code snippet library",
             "description": {
                 what: "<p>RSnip is an online tool that allows users to create and share small snippets of code built in React. Common web solutions shouldn't be hard to code. You've already done it once, why do it again? With RSnip, you can save your React code as a snippet to view and use later.</p>",
-                technical: "<p>RSnip was built in a team of four for a projects class at Neumont College of Computer Science. The frontend was built in React and is served up through AWS Amplify. The backend of the website is built with AWS services. We use Amplify to host the site,Lambda's and a Rest API to serve data, and DynamoDB as the database.</p>",
+                technical: "<p>RSnip was built in a team of four for a projects class at Neumont College of Computer Science. The frontend was built in React and is served up through AWS Amplify. The backend of the website is built with AWS services. We use Amplify to host the site, Lambda's and a Rest API to serve data, and DynamoDB as the database.</p>",
                 takeaways: "<p>This was the first time that any of the four of us had worked with AWS.This was a big learning curve, but we were able to utilize it how we needed in the time limit we had. I also learned how to render React code on the browser in an isolated container. I needed to make sure that any code written by users did not affect any other parts of the website.</p>"
             },
             "images": ["app.png", "landing.png"],
