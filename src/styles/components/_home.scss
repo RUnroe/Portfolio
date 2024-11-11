@@ -165,6 +165,58 @@
         background: var(--color-bg-secondary);
         border-radius: 0 var(--border-radius-card) 0 var(--border-radius-card);
     }
+
+
+    .icon-card-row {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding-top: 2rem;
+    
+        .icon-card {
+            display: flex;
+            gap: 2rem;
+            position: relative;
+            background-color: var(--color-primary-medium);
+            padding: 0.5rem 2.5rem;
+            max-width: 480px;
+            width: 100%;
+            align-items: center;
+
+            border-radius: 80px 0 80px 0;
+            &.border-reversed {
+                border-radius: 0 80px 0 80px;
+            }
+
+           
+
+            .icon-container {
+                display: flex;
+                width: 32px;
+                height: 32px;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-text-title);
+                fill: var(--color-text-title);
+                background-color: var(--color-bg-secondary);
+                padding: 0.8rem;
+                border-radius: 100vw;
+            }
+
+            .text-container {
+                padding: 1rem 0;
+                p {
+                    margin: 0;
+                    line-height: 2;
+                }
+                .title {
+                    font-weight: 500;
+                    color: var(--color-text-title);
+                }
+            }
+        }
+    }
 }
 
 /**************************

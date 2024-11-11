@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import SocialRow from "../components/socials/SocialRow";
 import siteData from "../siteData";
 import TechnologyIcon from "../components/TechnologyIcon";
-import { AwardIcon } from "../components/Icons";
+import { AwardIcon, EducationIcon, WorkIcon } from "../components/Icons";
 import { Tooltip } from 'react-tooltip';
 import AwardTimeline from "../components/AwardTimeline";
+import IconCard from "../components/IconCard";
 
 const Home = () => {
    
@@ -58,6 +58,19 @@ const Home = () => {
                         and that both the development and the design side spark my interest.  
                     </p>
                 </div> */}
+                <div className="icon-card-row">
+                   <IconCard 
+                        icon={<WorkIcon />}
+                        title={"Full Stack Developer"}
+                        body={"State of Utah - DTS"}
+                   />
+                   <IconCard 
+                        icon={<EducationIcon />}
+                        title={"BS Web Development & Design"}
+                        body={"Neumont College of Computer Science"}
+                        isBorderReversed
+                   />
+                </div>
             </div>
 
             <div className="skills">
