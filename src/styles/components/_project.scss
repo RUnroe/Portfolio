@@ -214,12 +214,16 @@
 }
 
 @media all and (max-width:1000px) {
-    .project .project-content {
-        display: flex;
-        flex-direction: column-reverse;
+    .project {
+        &.section {padding-top: 1rem; }
 
-        .image-section {
-            margin-top: 0;
+        .project-content {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .image-section {
+                margin-top: 0;
+            }
         }
     }
 }
@@ -227,6 +231,10 @@
 
 /* Border radius and grid layout for mobile version */
 @media all and (max-width:767px) {
+
+    .project .project-content {
+        gap: 1rem;
+    }
     .images {
 
         &.layout3a {
@@ -260,12 +268,22 @@
             .c0 {
                 min-width:unset;
                 min-height:unset;
+                border-top-right-radius: var(--border-radius-card);
+            }
+            .c1 {
+                border-bottom-left-radius: var(--border-radius-card);
             }
         }
         
         &.layout2b {
             display:grid;
             grid-template-columns: auto;
+            .c0 {
+                border-top-right-radius: var(--border-radius-card);
+            }
+            .c1 {
+                border-bottom-left-radius: var(--border-radius-card);
+            }
         }
     }
 
