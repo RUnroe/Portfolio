@@ -122,7 +122,7 @@ const Project = () => {
                     closeOnClickOutside={ true }
                     onClose={ closeImageViewer }
                     backgroundStyle={{
-                        backgroundColor: "#3a3942aa"
+                        backgroundColor: "#222a"
                       }}
                 />
             )}
