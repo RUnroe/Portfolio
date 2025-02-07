@@ -46,7 +46,7 @@ const siteData = {
             title: "GitHub",
             username: "RUnroe",
             iconComponent: <i className="fab fa-github"></i>,
-            url: "https://www.linkedin.com/in/ryanunroe/",
+            url: "https://github.com/RUnroe/",
             ariaLabel: "Navigate to Ryan's Github",
             isContactSocial: false,
         },
