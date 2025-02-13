@@ -30,10 +30,11 @@ const Home = () => {
 
                     <div className="headshot-container">
                         <motion.img className="headshot-image" 
-                            src={"images/site/headshotFull.jpg"}
+                            alt={"Ryan Unroe's headshot"}
+                            src={"images/site/headshotFull.webp"}
                             initial={{opacity: 0, scale: 0.5}}
                             animate={{opacity: 1, scale: 1}}
-                            transition={{delay: 0.3, duration: 0.3}}
+                            transition={{delay: 0.2, duration: 0.25}}
                         />
                     </div>
                 </div>

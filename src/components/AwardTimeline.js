@@ -12,8 +12,8 @@ const AwardTimeline = ({awards}) => {
   return ( 
     <section className="award-timeline">
       {
-        orderedAwards.map(({year, children}) => (
-            <div className="award-item">
+        orderedAwards.map(({year, children}, index) => (
+            <div className="award-item" key={`award-item-${year}-${index}`}>
               <div className="year">{year}</div>
               <p dangerouslySetInnerHTML={{__html: children}}/>
             </div>
