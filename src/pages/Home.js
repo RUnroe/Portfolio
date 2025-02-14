@@ -78,11 +78,16 @@ const Home = () => {
                 <div className="slanted-bg"></div>
                 <div className="container ex">
                     <div className="left">
-                        <h3>Skills</h3>
+                        <h3>About Me</h3>
                         <p>
-                            Throughout my high school PLTW engineering courses, I was fortunate to learn about CAD,
-                            mechanisms, automation, logic and computational thinking, digital electronics, and a product
-                            development process. High school also helped me learn HTML, CSS, JS, Java, PHP, and SQL. 
+                            I am currently working for the State of Utah designing, developing, and maintaining food
+                            safety websites in React, Java Spring, and SQL. 
+                           
+                        </p>
+                        <p>
+                            I graduated from 
+                            <a href="https://www.neumont.edu/" target="_blank" rel="noreferrer" aria-label="View Ryan's alma mater"> Neumont 
+                            College of Computer Science</a> as Valedictorian with a degree in Web Design and Development.
                         </p>
                         <p>
                             Neumont walked me back through the basics and helped reinforce widely used concepts such as
@@ -115,7 +120,7 @@ const Home = () => {
                                     year: 2017,
                                     children: ` <p>
                                         While developing my coding skills, I had a few opportunities to participate in competitions. 
-                                        In 2017, I represented my high school in the Spark App League (24 hour) Game Jam, where I won the <em>Best Overall Game</em> award. 
+                                        I represented my high school in the Spark App League (24 hour) Game Jam, where I won the <em>Best Overall Game</em> award. 
                                     </p>`
                                 },
                             ]}
